@@ -33,7 +33,7 @@
 - **Nicolly Candida Rodrigues de Souza**
 
 ### Coordenador(a)
-- **ANDRÉ GODOI CHIOVATO**
+- **André Godoi Chiovato**
 
 ---
 
