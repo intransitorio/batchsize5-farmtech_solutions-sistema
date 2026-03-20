@@ -30,10 +30,10 @@
 ## 🧑‍🏫 Professores
 
 ### Tutor(a)
-- **[Nome do Tutor(a)]**
+- **Nicolly Candida Rodrigues de Souza**
 
 ### Coordenador(a)
-- **[Nome do(a) Coordenador(a)]**
+- **ANDRÉ GODOI CHIOVATO**
 
 ---
 
@@ -92,29 +92,114 @@ Este repositório será utilizado para **versionamento com GitHub**, promovendo 
 
 ---
 
-## 📂 Estrutura de pastas
+## ▶️ Como executar o código
 
-Dentro dos arquivos e pastas presentes na raiz do projeto, definem-se:
+### Requisitos
 
-- **assets/**: arquivos de apoio visual ao projeto, como imagens e diagramas.
-- **document/**: documentação complementar do projeto, relatórios, resumos e materiais acadêmicos.
-- **src/**: código-fonte principal desenvolvido ao longo das etapas do projeto.
-- **README.md**: arquivo com a descrição geral, objetivo, estrutura e instruções de uso do projeto.
+Antes de iniciar, verifique se você possui instalado:
 
-Exemplo de organização:
+* **Python 3.10.6**
+* **R**
+* Um editor como **VS Code** ou similar
+
+### Execução da aplicação em Python
+
+1. Clone este repositório:
 
 ```bash
-farmtech-solutions/
-│
-├── assets/
-├── document/
-│   ├── resumo-artigo-embrapa.pdf
-│   └── relatorios/
-│
-├── src/
-│   ├── main.py
-│   ├── funcoes.py
-│   ├── dados.py
-│   └── analise_estatistica.R
-│
-└── README.md
+git clone [URL-DO-SEU-REPOSITORIO]
+```
+
+2. Acesse a pasta do projeto:
+
+```bash
+cd 
+```
+
+3. Entre na pasta de código-fonte:
+
+```bash
+cd 
+```
+
+4. Execute o programa principal:
+
+```bash
+python 
+```
+
+### Execução da análise em R
+
+1. Ainda dentro da pasta `src`, execute:
+
+```bash
+Rscript 
+```
+
+2. Para a integração com API meteorológica:
+
+```bash
+Rscript 
+```
+
+> **Observação:** ajuste os nomes dos arquivos conforme a estrutura final adotada pelo grupo.
+
+---
+
+## 🧮 Requisitos atendidos no projeto
+
+### Parte em Python
+
+* Suporte a duas culturas agrícolas
+* Cálculo de área de plantio
+* Cálculo de manejo de insumos
+* Organização de dados em vetores
+* Menu com entrada, saída, atualização, deleção e saída do programa
+* Uso de estruturas de repetição e decisão
+
+### Parte em R
+
+* Cálculo de média
+* Cálculo de desvio padrão
+* Processamento estatístico de dados agrícolas
+* Consumo de API meteorológica pública
+* Exibição de dados climáticos no terminal
+
+### Parte acadêmica complementar
+
+* Resumo do artigo da Embrapa para a disciplina de Formação Social
+* Uso do GitHub para versionamento colaborativo
+
+---
+
+## 📝 Artigo-base da disciplina de Formação Social
+
+Artigo disponível na base da Embrapa para leitura, análise e elaboração de resumo acadêmico.
+
+---
+
+## 🔄 Histórico de lançamentos
+
+* **0** -
+
+---
+
+## 🎯 Objetivo do projeto
+
+Desenvolver uma solução acadêmica e prática que simule um ambiente real de tecnologia aplicada ao agronegócio, integrando lógica de programação, estatística, consumo de API e colaboração em equipe com versionamento de código.
+
+---
+
+## 📄 Licença
+
+Este projeto foi desenvolvido para **fins acadêmicos**, como atividade da **FIAP**.
+Seu uso é destinado exclusivamente ao contexto educacional e de aprendizagem.
+
+---
+
+<div align="center">
+
+**FIAP - Projeto Acadêmico | FarmTech Solutions**
+
+</div>
+```
