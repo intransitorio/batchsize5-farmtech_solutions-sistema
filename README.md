@@ -1,46 +1,120 @@
-# batchsize5-farmtech_solutions-sistema
+<div align="center">
 
-## Descrição do Projeto
+# 🌱 FarmTech Solutions  
+## Projeto de Agricultura Digital em Python e R
 
-Este projeto foi desenvolvido para a startup **FarmTech Solutions** como uma solução inicial para um cliente do setor agrícola que busca migrar para a Agricultura Digital. O objetivo é criar um sistema para auxiliar no gerenciamento e planejamento de culturas, otimizando a produtividade através da tecnologia.
+</div>
 
-A solução é composta por duas aplicações principais: uma desenvolvida em Python para o gerenciamento de dados da lavoura e outra em R para análise estatística desses dados.
+---
 
-## Funcionalidades
+# Nome do projeto
 
-### Aplicação em Python
+**Sistema de Apoio à Agricultura Digital**
 
-A aplicação principal, desenvolvida em Python (`sistema.py`), oferece um sistema de gerenciamento de dados para duas culturas agrícolas. Ela opera através de um menu interativo no terminal e armazena os dados em vetores.
+# Nome do grupo
 
-As principais funcionalidades incluem:
+**Batch size 5**
 
-- **Gerenciamento de Culturas**: Suporte para duas culturas distintas, a serem definidas pela equipe com base na relevância para o estado.
-- **Cálculo de Área de Plantio**: Permite calcular a área de plantio para cada cultura, com base em figuras geométricas pré-definidas.
-- **Cálculo de Manejo de Insumos**: Calcula a quantidade necessária de insumos (como fertilizantes ou pesticidas) com base nas dimensões da lavoura e nas especificações de aplicação.
-- **Operações CRUD em Vetores**:
-  - **Entrada de Dados**: Inserção de informações para os cálculos.
-  - **Saída de Dados**: Exibição dos dados e resultados no terminal.
-  - **Atualização de Dados**: Modificação de um registro em uma posição específica do vetor.
-  - **Deleção de Dados**: Remoção de um registro do vetor.
-- **Menu Interativo**: Uma interface de linha de comando para navegar entre as funcionalidades, incluindo uma opção para sair do programa.
-- **Estruturas de Controle**: O código utiliza laços de repetição (`loop`) e estruturas de decisão para garantir a funcionalidade do menu e dos cálculos.
+---
 
-### Análise de Dados com R
+## 👥 Integrantes
 
-Utilizando os dados gerados pela aplicação Python, uma segunda aplicação em R foi desenvolvida para realizar análises estatísticas básicas, como o cálculo de **média** e **desvio padrão**.
+- **Thiago Barbosa Silva de Oliveira**
+- **Gustavo de Oliveira Caldas**
+- **João Felipe das Neves Alves**
+- **Beatriz Moreira Barreto Pinto**
+- **Sabrina Sabrina**
 
-### Desafio Extra: API Meteorológica com R
+---
 
-Como um recurso adicional, o projeto inclui um script em R que se conecta a uma API meteorológica pública para:
+## 🧑‍🏫 Professores
 
-1.  Coletar dados climáticos atuais.
-2.  Processar essas informações.
-3.  Exibir um resumo meteorológico em formato de texto no terminal.
+### Tutor(a)
+- **[Nome do Tutor(a)]**
 
-## Versionamento
+### Coordenador(a)
+- **[Nome do(a) Coordenador(a)]**
 
-O projeto utiliza o **GitHub** para controle de versão, simulando um ambiente de desenvolvimento colaborativo e permitindo o trabalho em equipe.
+---
 
-## Disciplina de Formação Social
+## 📘 Descrição
 
-O projeto também contempla um resumo do artigo Agricultura, sustentabilidade e ciência, conforme solicitado na disciplina de Formação Social.
+Este projeto foi desenvolvido pela equipe da **Startup FarmTech Solutions** com o objetivo de atender uma fazenda que busca migrar para o conceito de **Agricultura Digital**, utilizando tecnologia para melhorar produtividade, organização e tomada de decisão no campo.
+
+A proposta consiste na criação de uma **aplicação em Python**, baseada em **vetores**, com uso de **estruturas de decisão, repetição e menu interativo**, permitindo o gerenciamento de informações agrícolas de forma simples e funcional. O sistema foi pensado para dar suporte a **duas culturas agrícolas**, definidas pelo grupo de acordo com a relevância para a região de estudo.
+
+A aplicação contempla funcionalidades como:
+
+- cadastro e armazenamento de dados em vetores;
+- cálculo de área de plantio para cada cultura;
+- cálculo de manejo de insumos com base no tipo de cultura, produto utilizado e quantidade necessária;
+- exibição dos dados cadastrados no terminal;
+- atualização de dados em qualquer posição do vetor;
+- deleção de registros;
+- encerramento do sistema por menu de opções.
+
+Além da etapa em Python, o projeto também prevê o uso da linguagem **R** para realizar **cálculos estatísticos básicos**, como **média** e **desvio padrão**, a partir dos dados coletados na aplicação principal. Isso amplia a análise dos dados agrícolas e contribui para uma visão mais estratégica do cultivo.
+
+Como complemento interdisciplinar, o grupo também desenvolverá, na disciplina de **Formação Social**, um resumo crítico do artigo da Embrapa indicado na proposta. Já como etapa de aprofundamento, será implementada em **R** uma integração com uma **API meteorológica pública**, permitindo coletar, processar e exibir dados climáticos diretamente no terminal em texto simples.
+
+Este repositório será utilizado para **versionamento com GitHub**, promovendo organização, histórico de desenvolvimento e simulação de um ambiente colaborativo entre os integrantes da equipe.
+
+---
+
+## 🌾 Culturas trabalhadas
+
+- **Cultura 1:** Soja
+- **Cultura 2:** Milho
+
+---
+
+## ⚙️ Funcionalidades do sistema
+
+- [x] Cadastro de dados agrícolas em vetores
+- [x] Menu interativo no terminal
+- [x] Cálculo de área de plantio
+- [x] Cálculo de manejo de insumos
+- [x] Exibição de dados cadastrados
+- [x] Atualização de dados em posições específicas do vetor
+- [x] Remoção de dados do vetor
+- [x] Estruturas de decisão e repetição
+- [x] Cálculo estatístico em R
+- [x] Integração com API meteorológica pública em R
+
+---
+
+## 🧠 Tecnologias utilizadas
+
+- **Python**
+- **R**
+- **Git**
+- **GitHub**
+
+---
+
+## 📂 Estrutura de pastas
+
+Dentro dos arquivos e pastas presentes na raiz do projeto, definem-se:
+
+- **assets/**: arquivos de apoio visual ao projeto, como imagens e diagramas.
+- **document/**: documentação complementar do projeto, relatórios, resumos e materiais acadêmicos.
+- **src/**: código-fonte principal desenvolvido ao longo das etapas do projeto.
+- **README.md**: arquivo com a descrição geral, objetivo, estrutura e instruções de uso do projeto.
+
+Exemplo de organização:
+
+```bash
+farmtech-solutions/
+│
+├── assets/
+├── document/
+│   ├── resumo-artigo-embrapa.pdf
+│   └── relatorios/
+│
+├── src/
+│   ├── main.py
+│   ├── funcoes.py
+│   ├── dados.py
+│   └── analise_estatistica.R
+│
+└── README.md
