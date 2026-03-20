@@ -2,4 +2,4 @@
 
 Seja bem vindo ao nosso projeto
 
-# Olá eu sou o Gustavo!
+# Olá eu sou a Beatriz!
