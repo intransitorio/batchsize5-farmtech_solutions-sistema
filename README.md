@@ -64,7 +64,7 @@ Este repositório será utilizado para **versionamento com GitHub**, promovendo 
 ## 🌾 Culturas trabalhadas
 
 - **Cultura 1:** Soja
-- **Cultura 2:** Milho
+- **Cultura 2:** Cana-de-açúcar
 
 ---
 
