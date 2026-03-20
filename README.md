@@ -19,11 +19,11 @@
 
 ## 👥 Integrantes
 
-- **Thiago Barbosa Silva de Oliveira**
+- **Beatriz Moreira Barreto Pinto**
 - **Gustavo de Oliveira Caldas**
 - **João Felipe das Neves Alves**
-- **Beatriz Moreira Barreto Pinto**
-- **Sabrina Sabrina**
+- **Sabrina Gomes Campos**
+- **Thiago Barbosa Silva de Oliveira**
 
 ---
 
