@@ -121,28 +121,28 @@ mostrar_estatisticas_gerais <- function(dados) {
   media_insumo <- calcular_media(dados$quantidade_insumo)
   desvio_insumo <- calcular_desvio_padrao(dados$quantidade_insumo)
 
-  cat(sprintf("Média da área (ha): %.4f\n", media_area))
-  cat(sprintf("Desvio padrão da área (ha): %.4f\n", desvio_area))
-  cat(sprintf("Média da quantidade de insumo: %.4f\n", media_insumo))
-  cat(sprintf("Desvio padrão da quantidade de insumo: %.4f\n", desvio_insumo))
+  cat(sprintf("Média da área (ha): %.2f\n", media_area))
+  cat(sprintf("Desvio padrão da área (ha): %.2f\n", desvio_area))
+  cat(sprintf("Média da quantidade de insumo: %.2f\n", media_insumo))
+  cat(sprintf("Desvio padrão da quantidade de insumo: %.2f\n", desvio_insumo))
 }
 
 mostrar_media_area <- function(dados) {
   cabecalho("MÉDIA DA ÁREA EM HECTARES")
   media_area <- calcular_media(dados$area_ha)
-  cat(sprintf("A média das áreas cadastradas é: %.4f ha\n", media_area))
+  cat(sprintf("A média das áreas cadastradas é: %.2f ha\n", media_area))
 }
 
 mostrar_desvio_area <- function(dados) {
   cabecalho("DESVIO PADRÃO DA ÁREA EM HECTARES")
   desvio_area <- calcular_desvio_padrao(dados$area_ha)
-  cat(sprintf("O desvio padrão das áreas cadastradas é: %.4f ha\n", desvio_area))
+  cat(sprintf("O desvio padrão das áreas cadastradas é: %.2f ha\n", desvio_area))
 }
 
 mostrar_media_insumo <- function(dados) {
   cabecalho("MÉDIA DA QUANTIDADE DE INSUMO")
   media_insumo <- calcular_media(dados$quantidade_insumo)
-  cat(sprintf("A média da quantidade de insumo é: %.4f\n", media_insumo))
+  cat(sprintf("A média da quantidade de insumo é: %.2f\n", media_insumo))
 }
 
 mostrar_desvio_insumo <- function(dados) {
@@ -161,15 +161,15 @@ mostrar_resumo_por_cultura <- function(dados) {
 
     cat(sprintf("Cultura: %s\n", cultura_atual))
     cat(sprintf("Quantidade de registros: %d\n", nrow(subconjunto)))
-    cat(sprintf("Média de área (ha): %.4f\n", mean(subconjunto$area_ha)))
+    cat(sprintf("Média de área (ha): %.2f\n", mean(subconjunto$area_ha)))
 
     if (nrow(subconjunto) > 1) {
-      cat(sprintf("Desvio padrão da área (ha): %.4f\n", sd(subconjunto$area_ha)))
-      cat(sprintf("Média da quantidade de insumo: %.4f\n", mean(subconjunto$quantidade_insumo)))
-      cat(sprintf("Desvio padrão da quantidade de insumo: %.4f\n", sd(subconjunto$quantidade_insumo)))
+      cat(sprintf("Desvio padrão da área (ha): %.2f\n", sd(subconjunto$area_ha)))
+      cat(sprintf("Média da quantidade de insumo: %.2f\n", mean(subconjunto$quantidade_insumo)))
+      cat(sprintf("Desvio padrão da quantidade de insumo: %.2f\n", sd(subconjunto$quantidade_insumo)))
     } else {
       cat("Desvio padrão: não pode ser calculado com apenas 1 registro.\n")
-      cat(sprintf("Média da quantidade de insumo: %.4f\n", mean(subconjunto$quantidade_insumo)))
+      cat(sprintf("Média da quantidade de insumo: %.2f\n", mean(subconjunto$quantidade_insumo)))
     }
 
     linha()

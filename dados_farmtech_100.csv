@@ -1,0 +1,101 @@
+id,talhao,cultura,comprimento_m,largura_m,area_m2,area_ha,produto,dose_por_ha,quantidade_insumo
+1,Talhão A,Cana-de-açúcar,1506,161,242466,24.25,Herbicida,4.67,113.25
+2,Talhão B,Cana-de-açúcar,592,1028,608576,60.86,Fertilizante,188.73,11486.11
+3,Talhão C,Soja,686,932,639352,63.94,Inseticida,0.54,34.53
+4,Talhão D,Soja,696,953,663288,66.33,Inseticida,0.59,39.13
+5,Talhão E,Soja,1227,953,1169331,116.93,Fungicida,0.98,114.59
+6,Talhão F,Soja,1190,317,377230,37.72,Fungicida,0.5,18.86
+7,Talhão G,Cana-de-açúcar,1231,440,541640,54.16,Vinhaça,36.28,1964.92
+8,Talhão H,Soja,940,405,380700,38.07,Fertilizante NPK,362.45,13798.47
+9,Talhão I,Cana-de-açúcar,282,282,79524,7.95,Vinhaça,78.42,623.44
+10,Talhão J,Soja,449,725,325525,32.55,Inseticida,0.7,22.78
+11,Talhão K,Soja,161,782,125902,12.59,Fungicida,0.59,7.43
+12,Talhão L,Cana-de-açúcar,518,509,263662,26.37,Maturador,1.06,27.95
+13,Talhão M,Soja,1110,662,734820,73.48,Herbicida,2.35,172.68
+14,Talhão N,Cana-de-açúcar,1406,1021,1435526,143.55,Fertilizante,173.28,24874.34
+15,Talhão O,Soja,415,631,261865,26.19,Inseticida,0.44,11.52
+16,Talhão P,Soja,518,373,193214,19.32,Fungicida,1.05,20.29
+17,Talhão Q,Soja,900,880,792000,79.2,Fertilizante NPK,353.57,28002.74
+18,Talhão R,Soja,961,315,302715,30.27,Fungicida,0.72,21.79
+19,Talhão S,Soja,555,538,298590,29.86,Fertilizante NPK,364.84,10894.12
+20,Talhão T,Cana-de-açúcar,1357,650,882050,88.2,Herbicida,4.21,371.32
+21,Talhão U,Cana-de-açúcar,691,638,440858,44.09,Herbicida,4.69,206.78
+22,Talhão V,Cana-de-açúcar,1095,936,1024920,102.49,Fertilizante,151.8,15557.98
+23,Talhão W,Soja,1108,911,1009388,100.94,Fungicida,0.87,87.82
+24,Talhão X,Cana-de-açúcar,1114,434,483476,48.35,Fertilizante,293.07,14169.93
+25,Talhão Y,Soja,1051,465,488715,48.87,Inseticida,0.44,21.5
+26,Talhão Z,Cana-de-açúcar,1561,346,540106,54.01,Fertilizante,270.57,14613.49
+27,Talhão A1,Soja,309,573,177057,17.71,Inseticida,0.38,6.73
+28,Talhão B1,Cana-de-açúcar,421,617,259757,25.98,Fertilizante,341.01,8859.44
+29,Talhão C1,Soja,1179,471,555309,55.53,Fungicida,0.51,28.32
+30,Talhão D1,Soja,635,526,334010,33.4,Inseticida,0.62,20.71
+31,Talhão E1,Soja,1392,468,651456,65.15,Inseticida,0.42,27.36
+32,Talhão F1,Cana-de-açúcar,1727,1105,1908335,190.83,Maturador,1.61,307.24
+33,Talhão G1,Soja,620,484,300080,30.01,Herbicida,3.69,110.74
+34,Talhão H1,Cana-de-açúcar,1505,1054,1586270,158.63,Vinhaça,87.2,13832.54
+35,Talhão I1,Soja,157,942,147894,14.79,Fungicida,0.57,8.43
+36,Talhão J1,Soja,223,400,89200,8.92,Fertilizante NPK,296.22,2642.28
+37,Talhão K1,Soja,1344,606,814464,81.45,Inseticida,0.69,56.2
+38,Talhão L1,Soja,128,284,36352,3.64,Herbicida,2.3,8.37
+39,Talhão M1,Soja,419,991,415229,41.52,Herbicida,2.47,102.55
+40,Talhão N1,Cana-de-açúcar,306,422,129132,12.91,Maturador,2.29,29.56
+41,Talhão O1,Soja,1403,373,523319,52.33,Fungicida,0.56,29.3
+42,Talhão P1,Soja,1497,656,982032,98.2,Fertilizante NPK,297.74,29238.07
+43,Talhão Q1,Cana-de-açúcar,1714,1176,2015664,201.57,Maturador,2.21,445.47
+44,Talhão R1,Cana-de-açúcar,1400,389,544600,54.46,Maturador,2.49,135.61
+45,Talhão S1,Soja,286,932,266552,26.66,Inseticida,0.53,14.13
+46,Talhão T1,Cana-de-açúcar,935,662,618970,61.9,Maturador,1.89,116.99
+47,Talhão U1,Soja,160,794,127040,12.7,Fungicida,1.09,13.84
+48,Talhão V1,Cana-de-açúcar,761,948,721428,72.14,Maturador,1.12,80.8
+49,Talhão W1,Soja,1257,800,1005600,100.56,Fungicida,0.89,89.5
+50,Talhão X1,Soja,1249,596,744404,74.44,Fungicida,0.65,48.39
+51,Talhão Y1,Soja,156,251,39156,3.92,Fungicida,1.13,4.43
+52,Talhão Z1,Soja,861,448,385728,38.57,Fungicida,1.04,40.11
+53,Talhão A1,Soja,907,732,663924,66.39,Inseticida,0.43,28.55
+54,Talhão B2,Soja,195,564,109980,11.0,Inseticida,0.5,5.5
+55,Talhão C2,Cana-de-açúcar,1805,224,404320,40.43,Fertilizante,248.25,10036.75
+56,Talhão D2,Soja,1282,736,943552,94.36,Fertilizante NPK,279.01,26327.38
+57,Talhão E2,Soja,842,981,826002,82.6,Herbicida,3.89,321.31
+58,Talhão F2,Soja,1278,685,875430,87.54,Fungicida,0.54,47.27
+59,Talhão G2,Cana-de-açúcar,1932,371,716772,71.68,Fertilizante,157.47,11287.45
+60,Talhão H2,Soja,1457,846,1232622,123.26,Fungicida,0.6,73.96
+61,Talhão I2,Cana-de-açúcar,1970,926,1824220,182.42,Fertilizante,165.6,30208.75
+62,Talhão J2,Cana-de-açúcar,1846,547,1009762,100.98,Maturador,1.83,184.79
+63,Talhão K2,Soja,884,374,330616,33.06,Fertilizante NPK,252.63,8351.95
+64,Talhão L2,Cana-de-açúcar,946,477,451242,45.12,Herbicida,3.73,168.3
+65,Talhão M2,Cana-de-açúcar,789,541,426849,42.68,Herbicida,3.26,139.14
+66,Talhão N2,Cana-de-açúcar,1888,720,1359360,135.94,Fertilizante,220.48,29972.05
+67,Talhão O2,Cana-de-açúcar,637,945,601965,60.2,Herbicida,3.4,204.68
+68,Talhão P2,Soja,1164,473,550572,55.06,Fertilizante NPK,277.02,15252.72
+69,Talhão Q2,Soja,1338,406,543228,54.32,Fertilizante NPK,242.89,13193.78
+70,Talhão R2,Soja,1464,291,426024,42.6,Fungicida,1.08,46.01
+71,Talhão S2,Soja,129,126,16254,1.63,Fungicida,0.81,1.32
+72,Talhão T2,Soja,339,490,166110,16.61,Inseticida,0.45,7.47
+73,Talhão U2,Soja,469,820,384580,38.46,Herbicida,3.98,153.07
+74,Talhão V2,Soja,545,972,529740,52.97,Fungicida,0.82,43.44
+75,Talhão W2,Soja,191,929,177439,17.74,Fungicida,0.93,16.5
+76,Talhão X2,Cana-de-açúcar,981,500,490500,49.05,Fertilizante,347.22,17031.14
+77,Talhão Y2,Cana-de-açúcar,735,308,226380,22.64,Maturador,2.03,45.96
+78,Talhão Z2,Soja,684,251,171684,17.17,Herbicida,3.28,56.32
+79,Talhão A2,Soja,1388,356,494128,49.41,Fungicida,0.96,47.43
+80,Talhão B2,Cana-de-açúcar,1622,1101,1785822,178.58,Herbicida,4.43,791.11
+81,Talhão C3,Soja,192,719,138048,13.8,Fungicida,0.91,12.56
+82,Talhão D3,Soja,188,435,81780,8.18,Fertilizante NPK,385.38,3152.41
+83,Talhão E3,Soja,877,405,355185,35.52,Fertilizante NPK,278.43,9889.83
+84,Talhão F3,Soja,877,207,181539,18.15,Fungicida,0.85,15.43
+85,Talhão G3,Cana-de-açúcar,1800,834,1501200,150.12,Vinhaça,39.39,5913.23
+86,Talhão H3,Soja,947,507,480129,48.01,Inseticida,0.73,35.05
+87,Talhão I3,Cana-de-açúcar,436,469,204484,20.45,Herbicida,3.21,65.64
+88,Talhão J3,Cana-de-açúcar,220,164,36080,3.61,Vinhaça,63.9,230.68
+89,Talhão K3,Cana-de-açúcar,539,514,277046,27.7,Vinhaça,40.24,1114.65
+90,Talhão L3,Soja,247,792,195624,19.56,Inseticida,0.72,14.08
+91,Talhão M3,Cana-de-açúcar,514,1188,610632,61.06,Fertilizante,313.73,19156.35
+92,Talhão N3,Cana-de-açúcar,1446,1127,1629642,162.96,Vinhaça,90.49,14746.25
+93,Talhão O3,Soja,1246,328,408688,40.87,Fertilizante NPK,210.96,8621.94
+94,Talhão P3,Cana-de-açúcar,1800,688,1238400,123.84,Maturador,2.48,307.12
+95,Talhão Q3,Cana-de-açúcar,401,915,366915,36.69,Herbicida,3.14,115.21
+96,Talhão R3,Cana-de-açúcar,1851,847,1567797,156.78,Fertilizante,267.39,41921.4
+97,Talhão S3,Cana-de-açúcar,1065,588,626220,62.62,Herbicida,3.78,236.7
+98,Talhão T3,Soja,1285,535,687475,68.75,Fertilizante NPK,247.49,17014.94
+99,Talhão U3,Soja,231,327,75537,7.55,Herbicida,3.65,27.56
+100,Talhão V3,Soja,536,750,402000,40.2,Fertilizante NPK,356.89,14346.98
