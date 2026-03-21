@@ -203,3 +203,5 @@ Seu uso é destinado exclusivamente ao contexto educacional e de aprendizagem.
 
 </div>
 ```
+O projeto também contempla um resumo do artigo "Uso de veículos aéreos não tripulados (VANT) em Agricultura de Precisão" de Lúcio André de Castro Jorge, Ricardo Y. Inamasu, conforme solicitado na disciplina de Formação Social.
+
