@@ -6,9 +6,9 @@
 
 <br>
 
-# Nome do projeto
+# Sistema de Apoio à Agricultura Digital
 
-## Nome do grupo
+## Grupo Batch Size 5
 
 ## 👨‍🎓 Integrantes:
 
@@ -62,15 +62,60 @@ Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
 
 ## 🔧 Como executar o código
 
-_Acrescentar as informações necessárias sobre pré-requisitos (IDEs, serviços, bibliotecas etc.) e instalação básica do projeto, descrevendo eventuais versões utilizadas. Colocar um passo a passo de como o leitor pode baixar o seu código e executá-lo a partir de sua máquina ou seu repositório. Considere a explicação organizada em fase._
+### Pré-requisitos
+
+- **Python 3.x**: Para o sistema principal de manejo (`manejo-de-insumos.py`).
+- **R**: Para os scripts de análise (`calculo-media-e-desvio.r` e `analise-meteorologica.r`).
+
+> **Nota**: A biblioteca `jsonlite` para R é necessária para a análise meteorológica. O script tentará instalá-la automaticamente caso não a encontre.
+
+### Passo a Passo
+
+1.  Após clonar o repositório, navegue com o terminal até a pasta `src`, onde os scripts estão localizados.
+
+---
+
+#### 1. Sistema de Manejo de Insumos (Python)
+
+Este é o sistema principal para cadastrar, gerenciar e calcular dados de insumos e áreas.
+
+**Como executar:**
+
+```bash
+python manejo-de-insumos.py
+```
+
+> **Importante:** Para que a análise estatística em R funcione com os dados mais recentes, utilize a **opção 8** do menu para exportar os dados para o arquivo `dados_agricolas.csv`.
+
+---
+
+#### 2. Análise Estatística (R)
+
+Este script lê os dados do arquivo `dados_agricolas.csv` e calcula a média e o desvio padrão.
+
+**Como executar:**
+
+```bash
+Rscript calculo-media-e-desvio.r
+```
+
+> Se o arquivo `dados_agricolas.csv` não for encontrado, o script utilizará um conjunto de dados de exemplo para demonstração.
+
+---
+
+#### 3. Análise Meteorológica (R)
+
+Este script consulta uma API de clima para fornecer previsões e interpretações agrícolas para as culturas de Soja e Cana-de-açúcar.
+
+**Como executar:**
+
+```bash
+Rscript analise-meteorologica.r
+```
 
 ## 🗃 Histórico de lançamentos
 
-- ## 0.5.0 - XX/XX/2024
-- ## 0.4.0 - XX/XX/2024
-- ## 0.3.0 - XX/XX/2024
-- ## 0.2.0 - XX/XX/2024
-- ## 0.1.0 - XX/XX/2024
+- ## 0.1.0 - 21/03/2026
 
 ## 📋 Licença
 
