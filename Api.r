@@ -25,6 +25,10 @@ linha <- function(tamanho = 70) {
   cat(paste(rep("-", tamanho), collapse = ""), "\n")
 }
 
+linha_em_branco <- function() {
+  cat("\n")
+}
+
 cabecalho <- function(titulo) {
   linha()
   cat(titulo, "\n")
@@ -213,19 +217,19 @@ mostrar_alerta_agricola_geral <- function(clima) {
   diario <- clima$daily
 
   if (atual$temperature_2m >= 32) {
-    cat("Alerta: temperatura elevada no momento. Pode haver estresse térmico na lavoura.\n")
+    cat("Alerta: Temperatura elevada no momento. Pode haver estresse térmico na lavoura.\n")
   } else {
     cat("Temperatura atual sem indicativo crítico imediato.\n")
   }
 
   if (sum(diario$precipitation_sum) < 5) {
-    cat("Atenção: baixa previsão de chuva nos próximos dias. Avaliar necessidade de irrigação.\n")
+    cat("Atenção: Baixa previsão de chuva nos próximos dias. Avaliar necessidade de irrigação.\n")
   } else {
     cat("Há previsão de chuva suficiente para acompanhamento da umidade do solo.\n")
   }
 
   if (max(diario$wind_speed_10m_max) > 30) {
-    cat("Atenção: vento forte previsto. Aplicações agrícolas podem exigir replanejamento.\n")
+    cat("Atenção: Vento forte previsto. Aplicações agrícolas podem exigir replanejamento.\n")
   } else {
     cat("Não há indicação de vento forte relevante para operações agrícolas.\n")
   }
@@ -250,40 +254,40 @@ mostrar_interpretacao_por_cultura <- function(cultura, clima) {
 
   if (cultura == "Soja") {
     if (chuva_total < 8) {
-      cat("Soja: previsão de chuva baixa para os próximos dias. Monitorar umidade do solo e possível necessidade de irrigação.\n")
+      cat("Precipitação: Previsão de chuva baixa para os próximos dias. Monitorar umidade do solo e possível necessidade de irrigação.\n")
     } else {
-      cat("Soja: previsão de chuva razoável para manutenção da umidade do solo.\n")
+      cat("Precipitação: Previsão de chuva razoável para manutenção da umidade do solo.\n")
     }
 
     if (temperatura_maxima_periodo > 34) {
-      cat("Soja: temperaturas máximas elevadas podem aumentar estresse hídrico e afetar o desenvolvimento da cultura.\n")
+      cat("Temperatura: Temperaturas máximas elevadas podem aumentar estresse hídrico e afetar o desenvolvimento da cultura.\n")
     } else {
-      cat("Soja: faixa térmica sem sinal forte de estresse extremo no curto prazo.\n")
+      cat("Temperatura: Faixa térmica sem sinal forte de estresse extremo no curto prazo.\n")
     }
 
     if (vento_maximo > 25) {
-      cat("Soja: vento forte pode prejudicar pulverizações. Avaliar janela operacional antes da aplicação de defensivos.\n")
+      cat("Vento: Vento forte pode prejudicar pulverizações. Avaliar janela operacional antes da aplicação de defensivos.\n")
     } else {
-      cat("Soja: condição de vento mais favorável para manejo operacional.\n")
+      cat("Vento: Condição de vento mais favorável para manejo operacional.\n")
     }
 
   } else if (cultura == "Cana-de-açúcar") {
     if (chuva_total < 5) {
-      cat("Cana-de-açúcar: baixa chuva prevista. Em áreas recém-implantadas, convém atenção à disponibilidade hídrica.\n")
+      cat("Precipitação: Baixa chuva prevista. Em áreas recém-implantadas, convém atenção à disponibilidade hídrica.\n")
     } else {
-      cat("Cana-de-açúcar: volume de chuva previsto pode favorecer a manutenção do vigor vegetativo.\n")
+      cat("Precipitação: Volume de chuva previsto pode favorecer a manutenção do vigor vegetativo.\n")
     }
 
     if (temperatura_atual >= 33 || temperatura_maxima_periodo > 35) {
-      cat("Cana-de-açúcar: calor elevado pode aumentar a perda de água e exigir monitoramento do campo.\n")
+      cat("Temperatura: Calor elevado pode aumentar a perda de água e exigir monitoramento do campo.\n")
     } else {
-      cat("Cana-de-açúcar: temperatura dentro de faixa sem alerta térmico imediato.\n")
+      cat("Temperatura: Temperatura dentro de faixa sem alerta térmico imediato.\n")
     }
 
     if (vento_maximo > 30) {
-      cat("Cana-de-açúcar: vento forte pode interferir em aplicações e operações mecanizadas.\n")
+      cat("Vento: Vento forte pode interferir em aplicações e operações mecanizadas.\n")
     } else {
-      cat("Cana-de-açúcar: vento sem impacto operacional expressivo previsto.\n")
+      cat("Vento: Vento sem impacto operacional expressivo previsto.\n")
     }
   }
 }
@@ -313,12 +317,16 @@ executar_consulta_completa <- function() {
     return()
   }
 
+  linha_em_branco()
   mostrar_clima_atual(local_info, clima)
-  linha()
+
+  linha_em_branco()
   mostrar_previsao_diaria(local_info, clima)
-  linha()
+
+  linha_em_branco()
   mostrar_alerta_agricola_geral(clima)
-  linha()
+
+  linha_em_branco()
   mostrar_interpretacao_por_cultura(cultura, clima)
 }
 
