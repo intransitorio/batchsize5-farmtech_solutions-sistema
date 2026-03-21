@@ -43,4 +43,5 @@ O projeto utiliza o **GitHub** para controle de versão, simulando um ambiente d
 
 ## Disciplina de Formação Social
 
-O projeto também contempla um resumo do artigo Agricultura, sustentabilidade e ciência, conforme solicitado na disciplina de Formação Social.
+O projeto também contempla um resumo do artigo "Uso de veículos aéreos não tripulados (VANT) em Agricultura de Precisão" de Lúcio André de Castro Jorge, Ricardo Y. Inamasu, conforme solicitado na disciplina de Formação Social.
+
