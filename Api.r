@@ -328,6 +328,10 @@ executar_consulta_completa <- function() {
 
   linha_em_branco()
   mostrar_interpretacao_por_cultura(cultura, clima)
+
+  linha()
+  calcular_estatisticas(clima)
+   
 }
 
 # ------------------------------
@@ -369,6 +373,21 @@ main <- function() {
     }
   }
 }
+# ------------------------------
+# Estatísticas básicas
+# ------------------------------
+calcular_estatisticas <- function(clima) {
+  diario <- clima$daily
+  temperaturas <- diario$temperature_2m_max
 
+  media <- mean(temperaturas)
+  desvio <- sd(temperaturas)
+
+  linha()
+  cat("ESTATÍSTICAS CLIMÁTICAS\n")
+  linha()
+  cat(sprintf("Média da temperatura máxima: %.2f °C\n", media))
+  cat(sprintf("Desvio padrão da temperatura máxima: %.2f\n", desvio))
+}
 # Ponto de entrada
 main()
