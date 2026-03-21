@@ -1,207 +1,82 @@
-<div align="center">
+# FIAP - Faculdade de Informática e Administração Paulista
 
-# 🌱 FarmTech Solutions  
-## Projeto de Agricultura Digital em Python e R
+<p align="center">
+<a href= "https://www.fiap.com.br/"><img src="assets/logo-fiap.png" alt="FIAP - Faculdade de Informática e Admnistração Paulista" border="0" width=40% height=40%></a>
+</p>
 
-</div>
-
----
+<br>
 
 # Nome do projeto
 
-**Sistema de Apoio à Agricultura Digital**
+## Nome do grupo
 
-# Nome do grupo
+## 👨‍🎓 Integrantes:
 
-**Batch size 5**
+- <a href="https://www.linkedin.com/company/inova-fusca">Beatriz Moreira Barreto Pinto</a>
+- <a href="https://www.linkedin.com/company/inova-fusca">Gustavo de Oliveira Caldas</a>
+- <a href="https://www.linkedin.com/company/inova-fusca">João Felipe das Neves Alves</a>
+- <a href="https://www.linkedin.com/company/inova-fusca">Sabrina Gomes Campos</a>
+- <a href="https://www.linkedin.com/company/inova-fusca">Thiago Barbosa Silva de Oliveira</a>
 
----
-
-## 👥 Integrantes
-
-- **Beatriz Moreira Barreto Pinto**
-- **Gustavo de Oliveira Caldas**
-- **João Felipe das Neves Alves**
-- **Sabrina Gomes Campos**
-- **Thiago Barbosa Silva de Oliveira**
-
----
-
-## 🧑‍🏫 Professores
+## 👩‍🏫 Professores:
 
 ### Tutor(a)
-- **Nicolly Candida Rodrigues de Souza**
+
+- <a href="https://www.linkedin.com/company/inova-fusca">Nicolly Candida Rodrigues de Souza</a>
 
 ### Coordenador(a)
-- **André Godoi Chiovato**
 
----
+- <a href="https://www.linkedin.com/company/inova-fusca">André Godoi Chiovato</a>
 
-## 📘 Descrição
+## 📜 Descrição
 
-Este projeto foi desenvolvido pela equipe da **Startup FarmTech Solutions** com o objetivo de atender uma fazenda que busca migrar para o conceito de **Agricultura Digital**, utilizando tecnologia para melhorar produtividade, organização e tomada de decisão no campo.
+### 📘 Projeto FarmTech Solutions: Agricultura Digital
 
-A proposta consiste na criação de uma **aplicação em Python**, baseada em **vetores**, com uso de **estruturas de decisão, repetição e menu interativo**, permitindo o gerenciamento de informações agrícolas de forma simples e funcional. O sistema foi pensado para dar suporte a **duas culturas agrícolas**, definidas pelo grupo de acordo com a relevância para a região de estudo.
+Este projeto da FarmTech Solutions aplica Agricultura Digital para otimizar fazendas. A aplicação em Python usa vetores e menus para gerir culturas de Soja e Cana-de-açúcar.
 
-A aplicação contempla funcionalidades como:
+#### ⚙️ Funcionalidades
 
-- cadastro e armazenamento de dados em vetores;
-- cálculo de área de plantio para cada cultura;
-- cálculo de manejo de insumos com base no tipo de cultura, produto utilizado e quantidade necessária;
-- exibição dos dados cadastrados no terminal;
-- atualização de dados em qualquer posição do vetor;
-- deleção de registros;
-- encerramento do sistema por menu de opções.
+- **CRUD:** Cadastro, edição e deleção de dados agrícolas em vetores.
+- **Cálculos:** Gestão de área de plantio e manejo de insumos.
+- **Análise em R:** Estatísticas (média/desvio) e integração com API de clima.
 
-Além da etapa em Python, o projeto também prevê o uso da linguagem **R** para realizar **cálculos estatísticos básicos**, como **média** e **desvio padrão**, a partir dos dados coletados na aplicação principal. Isso amplia a análise dos dados agrícolas e contribui para uma visão mais estratégica do cultivo.
+O sistema utiliza Git para versionamento, unindo lógica de programação, análise de dados e fundamentos da Embrapa para apoio à decisão no campo.
 
-Como complemento interdisciplinar, o grupo também desenvolverá, na disciplina de **Formação Social**, um resumo crítico do artigo da Embrapa indicado na proposta. Já como etapa de aprofundamento, será implementada em **R** uma integração com uma **API meteorológica pública**, permitindo coletar, processar e exibir dados climáticos diretamente no terminal em texto simples.
+## 📁 Estrutura de pastas
 
-Este repositório será utilizado para **versionamento com GitHub**, promovendo organização, histórico de desenvolvimento e simulação de um ambiente colaborativo entre os integrantes da equipe.
+Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
 
----
+- <b>.github</b>: Nesta pasta ficarão os arquivos de configuração específicos do GitHub que ajudam a gerenciar e automatizar processos no repositório.
 
-## 🌾 Culturas trabalhadas
+- <b>assets</b>: aqui estão os arquivos relacionados a elementos não-estruturados deste repositório, como imagens.
 
-- **Cultura 1:** Soja
-- **Cultura 2:** Cana-de-açúcar
+- <b>config</b>: Posicione aqui arquivos de configuração que são usados para definir parâmetros e ajustes do projeto.
 
----
+- <b>document</b>: aqui estão todos os documentos do projeto que as atividades poderão pedir. Na subpasta "other", adicione documentos complementares e menos importantes.
 
-## ⚙️ Funcionalidades do sistema
+- <b>scripts</b>: Posicione aqui scripts auxiliares para tarefas específicas do seu projeto. Exemplo: deploy, migrações de banco de dados, backups.
 
-- [x] Cadastro de dados agrícolas em vetores
-- [x] Menu interativo no terminal
-- [x] Cálculo de área de plantio
-- [x] Cálculo de manejo de insumos
-- [x] Exibição de dados cadastrados
-- [x] Atualização de dados em posições específicas do vetor
-- [x] Remoção de dados do vetor
-- [x] Estruturas de decisão e repetição
-- [x] Cálculo estatístico em R
-- [x] Integração com API meteorológica pública em R
+- <b>src</b>: Todo o código fonte criado para o desenvolvimento do projeto ao longo das 7 fases.
 
----
+- <b>README.md</b>: arquivo que serve como guia e explicação geral sobre o projeto (o mesmo que você está lendo agora).
 
-## 🧠 Tecnologias utilizadas
+## 🔧 Como executar o código
 
-- **Python**
-- **R**
-- **Git**
-- **GitHub**
+_Acrescentar as informações necessárias sobre pré-requisitos (IDEs, serviços, bibliotecas etc.) e instalação básica do projeto, descrevendo eventuais versões utilizadas. Colocar um passo a passo de como o leitor pode baixar o seu código e executá-lo a partir de sua máquina ou seu repositório. Considere a explicação organizada em fase._
 
----
+## 🗃 Histórico de lançamentos
 
-## ▶️ Como executar o código
+- 0.5.0 - XX/XX/2024
+  -
+- 0.4.0 - XX/XX/2024
+  -
+- 0.3.0 - XX/XX/2024
+  -
+- 0.2.0 - XX/XX/2024
+  -
+- 0.1.0 - XX/XX/2024
+  -
 
-### Requisitos
+## 📋 Licença
 
-Antes de iniciar, verifique se você possui instalado:
-
-* **Python 3.10.6**
-* **R**
-* Um editor como **VS Code** ou similar
-
-### Execução da aplicação em Python
-
-1. Clone este repositório:
-
-```bash
-git clone [URL-DO-SEU-REPOSITORIO]
-```
-
-2. Acesse a pasta do projeto:
-
-```bash
-cd 
-```
-
-3. Entre na pasta de código-fonte:
-
-```bash
-cd 
-```
-
-4. Execute o programa principal:
-
-```bash
-python 
-```
-
-### Execução da análise em R
-
-1. Ainda dentro da pasta `src`, execute:
-
-```bash
-Rscript 
-```
-
-2. Para a integração com API meteorológica:
-
-```bash
-Rscript 
-```
-
-> **Observação:** ajuste os nomes dos arquivos conforme a estrutura final adotada pelo grupo.
-
----
-
-## 🧮 Requisitos atendidos no projeto
-
-### Parte em Python
-
-* Suporte a duas culturas agrícolas
-* Cálculo de área de plantio
-* Cálculo de manejo de insumos
-* Organização de dados em vetores
-* Menu com entrada, saída, atualização, deleção e saída do programa
-* Uso de estruturas de repetição e decisão
-
-### Parte em R
-
-* Cálculo de média
-* Cálculo de desvio padrão
-* Processamento estatístico de dados agrícolas
-* Consumo de API meteorológica pública
-* Exibição de dados climáticos no terminal
-
-### Parte acadêmica complementar
-
-* Resumo do artigo da Embrapa para a disciplina de Formação Social
-* Uso do GitHub para versionamento colaborativo
-
----
-
-## 📝 Artigo-base da disciplina de Formação Social
-
-Artigo disponível na base da Embrapa para leitura, análise e elaboração de resumo acadêmico.
-
----
-
-## 🔄 Histórico de lançamentos
-
-* **0** -
-
----
-
-## 🎯 Objetivo do projeto
-
-Desenvolver uma solução acadêmica e prática que simule um ambiente real de tecnologia aplicada ao agronegócio, integrando lógica de programação, estatística, consumo de API e colaboração em equipe com versionamento de código.
-
----
-
-## 📄 Licença
-
-Este projeto foi desenvolvido para **fins acadêmicos**, como atividade da **FIAP**.
-Seu uso é destinado exclusivamente ao contexto educacional e de aprendizagem.
-
----
-
-<div align="center">
-
-**FIAP - Projeto Acadêmico | FarmTech Solutions**
-
-</div>
-```
-O projeto também contempla um resumo do artigo "Uso de veículos aéreos não tripulados (VANT) em Agricultura de Precisão" de Lúcio André de Castro Jorge, Ricardo Y. Inamasu, conforme solicitado na disciplina de Formação Social.
-
+<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/agodoi/template">MODELO GIT FIAP</a> por <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://fiap.com.br">Fiap</a> está licenciado sobre <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution 4.0 International</a>.</p>
