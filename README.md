@@ -12,21 +12,21 @@
 
 ## 👨‍🎓 Integrantes:
 
-- <a href="https://www.linkedin.com/company/inova-fusca">Beatriz Moreira Barreto Pinto</a>
-- <a href="https://www.linkedin.com/company/inova-fusca">Gustavo de Oliveira Caldas</a>
-- <a href="https://www.linkedin.com/company/inova-fusca">João Felipe das Neves Alves</a>
-- <a href="https://www.linkedin.com/company/inova-fusca">Sabrina Gomes Campos</a>
-- <a href="https://www.linkedin.com/company/inova-fusca">Thiago Barbosa Silva de Oliveira</a>
+- <a href="https://www.linkedin.com/in/beatriz-barreto-pinto-btrz">Beatriz Moreira Barreto Pinto</a>
+- <a href="https://www.linkedin.com/in/gustoliver-caldas-7a9a33350">Gustavo de Oliveira Caldas</a>
+- <a href="https://www.linkedin.com/in/jfnalves">João Felipe das Neves Alves</a>
+- <a href="https://www.linkedin.com/in/sabrina-gomes-campos-13280642">Sabrina Gomes Campos</a>
+- <a href="https://www.linkedin.com/in/thiago-oliveira-8b6a30291">Thiago Barbosa Silva de Oliveira</a>
 
 ## 👩‍🏫 Professores:
 
 ### Tutor(a)
 
-- <a href="https://www.linkedin.com/company/inova-fusca">Nicolly Candida Rodrigues de Souza</a>
+- <a href="https://www.linkedin.com/in/nicollycrsouza">Nicolly Candida Rodrigues de Souza</a>
 
 ### Coordenador(a)
 
-- <a href="https://www.linkedin.com/company/inova-fusca">André Godoi Chiovato</a>
+- <a href="https://www.linkedin.com/in/andregodoichiovato">André Godoi Chiovato</a>
 
 ## 📜 Descrição
 
@@ -66,16 +66,11 @@ _Acrescentar as informações necessárias sobre pré-requisitos (IDEs, serviço
 
 ## 🗃 Histórico de lançamentos
 
-- 0.5.0 - XX/XX/2024
-  -
-- 0.4.0 - XX/XX/2024
-  -
-- 0.3.0 - XX/XX/2024
-  -
-- 0.2.0 - XX/XX/2024
-  -
-- 0.1.0 - XX/XX/2024
-  -
+- ## 0.5.0 - XX/XX/2024
+- ## 0.4.0 - XX/XX/2024
+- ## 0.3.0 - XX/XX/2024
+- ## 0.2.0 - XX/XX/2024
+- ## 0.1.0 - XX/XX/2024
 
 ## 📋 Licença
 
