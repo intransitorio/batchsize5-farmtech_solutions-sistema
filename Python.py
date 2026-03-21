@@ -49,6 +49,7 @@ def linha(tamanho=70):
 
 
 def pausar():
+    linha()
     input("\nPressione Enter para continuar...")
 
 
@@ -65,7 +66,7 @@ def ler_int(mensagem, minimo=None, maximo=None):
                 continue
             return valor
         except ValueError:
-            print("Erro: digite um número inteiro válido.")
+            mostrar_cabecalho("Erro: digite uma opção válida do menu.")
 
 
 
@@ -83,9 +84,10 @@ def ler_float(mensagem, minimo=None):
 
 
 def escolher_cultura():
-    print("\nEscolha a cultura:")
+    mostrar_cabecalho("Escolha a cultura:")
     print("1 - Soja")
     print("2 - Cana-de-açúcar")
+    linha()
 
     opcao = ler_int("Opção: ", 1, 2)
     if opcao == 1:
@@ -97,12 +99,13 @@ def escolher_cultura():
 def escolher_produto(cultura):
     produtos_cultura = list(INSUMOS[cultura].keys())
 
-    print(f"\nProdutos disponíveis para {cultura}:")
+    mostrar_cabecalho(f"Produtos disponíveis para {cultura}:")
     for i, produto in enumerate(produtos_cultura, start=1):
         dose = INSUMOS[cultura][produto]
         unidade = "kg/ha" if "Fertilizante" in produto else "L/ha"
         print(f"{i} - {produto} ({dose} {unidade})")
 
+    linha()
     opcao = ler_int("Escolha o produto: ", 1, len(produtos_cultura))
     produto_escolhido = produtos_cultura[opcao - 1]
     dose = INSUMOS[cultura][produto_escolhido]
@@ -128,6 +131,7 @@ def existe_registro():
 
 
 def mostrar_cabecalho(titulo):
+    print("\n")
     linha()
     print(titulo.center(70))
     linha()
@@ -165,9 +169,9 @@ def cadastrar_registro():
     doses_por_ha.append(dose)
     quantidades_insumo.append(quantidade)
 
-    print("\nRegistro cadastrado com sucesso.")
+    mostrar_cabecalho("Registro cadastrado com sucesso")
     print(f"ID: {novo_id}")
-    print(f"Área: {area_m2:.2f} m² | {area_ha:.4f} ha")
+    print(f"Área: {area_m2:.0f} m² | {area_ha:.2f} ha")
 
     unidade = "kg" if "Fertilizante" in produto else "L"
     print(f"Insumo calculado: {produto} -> {quantidade:.2f} {unidade}")
@@ -186,9 +190,9 @@ def listar_registros():
         print(f"ID: {ids[i]}")
         print(f"Talhão: {nomes_talhoes[i]}")
         print(f"Cultura: {culturas[i]}")
-        print(f"Comprimento: {comprimentos_m[i]:.2f} m")
-        print(f"Largura: {larguras_m[i]:.2f} m")
-        print(f"Área: {areas_m2[i]:.2f} m² | {areas_ha[i]:.4f} ha")
+        print(f"Comprimento: {comprimentos_m[i]:.0f} m")
+        print(f"Largura: {larguras_m[i]:.0f} m")
+        print(f"Área: {areas_m2[i]:.0f} m² | {areas_ha[i]:.2f} ha")
         print(f"Produto: {produtos[i]}")
 
         unidade_dose = "kg/ha" if "Fertilizante" in produtos[i] else "L/ha"
@@ -284,10 +288,10 @@ def calcular_area_individual():
 
     print(f"\nTalhão: {nomes_talhoes[posicao]}")
     print(f"Cultura: {culturas[posicao]}")
-    print(f"Comprimento: {comprimentos_m[posicao]:.2f} m")
-    print(f"Largura: {larguras_m[posicao]:.2f} m")
-    print(f"Área calculada: {areas_m2[posicao]:.2f} m²")
-    print(f"Área em hectares: {areas_ha[posicao]:.4f} ha")
+    print(f"Comprimento: {comprimentos_m[posicao]:.0f} m")
+    print(f"Largura: {larguras_m[posicao]:.0f} m")
+    print(f"Área calculada: {areas_m2[posicao]:.0f} m²")
+    print(f"Área em hectares: {areas_ha[posicao]:.0f} ha")
 
 
 
@@ -299,6 +303,7 @@ def calcular_insumo_individual():
         return
 
     listar_resumo_posicoes()
+    linha()
     posicao = ler_int("Informe a posição do vetor para consultar o insumo: ", 0, len(ids) - 1)
 
     produto = produtos[posicao]
@@ -307,7 +312,7 @@ def calcular_insumo_individual():
 
     print(f"\nTalhão: {nomes_talhoes[posicao]}")
     print(f"Cultura: {culturas[posicao]}")
-    print(f"Área: {areas_ha[posicao]:.4f} ha")
+    print(f"Área: {areas_ha[posicao]:.2f} ha")
     print(f"Produto utilizado: {produto}")
     print(f"Dose por hectare: {doses_por_ha[posicao]:.2f} {unidade_dose}")
     print(f"Quantidade necessária: {quantidades_insumo[posicao]:.2f} {unidade_qtd}")
@@ -338,11 +343,11 @@ def exibir_resumo_geral():
             area_cana += areas_ha[i]
 
     print(f"Total de registros cadastrados: {total_registros}")
-    print(f"Área total cultivada: {total_area_m2:.2f} m² | {total_area_ha:.4f} ha")
+    print(f"Área total cultivada: {total_area_m2:.0f} m² | {total_area_ha:.2f} ha")
     print(f"Quantidade de registros de Soja: {qtd_soja}")
     print(f"Quantidade de registros de Cana-de-açúcar: {qtd_cana}")
-    print(f"Área total de Soja: {area_soja:.4f} ha")
-    print(f"Área total de Cana-de-açúcar: {area_cana:.4f} ha")
+    print(f"Área total de Soja: {area_soja:.2f} ha")
+    print(f"Área total de Cana-de-açúcar: {area_cana:.2f} ha")
 
 
 
@@ -402,7 +407,7 @@ def exportar_para_csv():
 def listar_resumo_posicoes():
     print("\nPosições disponíveis no vetor:")
     for i in range(len(ids)):
-        print(f"{i} - {nomes_talhoes[i]} | {culturas[i]} | {areas_ha[i]:.4f} ha")
+        print(f"{i} - {nomes_talhoes[i]} | {culturas[i]} | {areas_ha[i]:.2f} ha")
 
 
 
