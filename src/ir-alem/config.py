@@ -1,0 +1,5 @@
+ORACLE_HOST = "localhost"
+ORACLE_PORT = 1521
+ORACLE_SERVICE_NAME = "XEPDB1"
+ORACLE_USER = "seu_usuario"
+ORACLE_PASSWORD = "sua_senha"

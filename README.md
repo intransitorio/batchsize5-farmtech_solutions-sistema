@@ -17,6 +17,7 @@
 - <a href="https://www.linkedin.com/in/jfnalves">João Felipe das Neves Alves</a>
 - <a href="https://www.linkedin.com/in/sabrina-gomes-campos-13280642">Sabrina Gomes Campos</a>
 - <a href="https://www.linkedin.com/in/thiago-oliveira-8b6a30291">Thiago Barbosa Silva de Oliveira</a>
+- - <a href="https://www.linkedin.com/in/paulocbarreto">Paulo Cesar Barreto da Silva</a>
 
 ## 👩‍🏫 Professores:
 
