@@ -15,6 +15,7 @@
 - <a href="https://www.linkedin.com/in/beatriz-barreto-pinto-btrz">Beatriz Moreira Barreto Pinto</a>
 - <a href="https://www.linkedin.com/in/gustoliver-caldas-7a9a33350">Gustavo de Oliveira Caldas</a>
 - <a href="https://www.linkedin.com/in/jfnalves">João Felipe das Neves Alves</a>
+- <a href="https://www.linkedin.com/in/paulocbarreto">Paulo Oliveira</a>
 - <a href="https://www.linkedin.com/in/tamiresvferreiras/">Tamires Ferreira</a>
 
 ## 👩‍🏫 Professores:
@@ -100,8 +101,8 @@ O sistema exporta via Monitor Serial os dados em tempo real para análise em Pyt
 
 ## 🚀 Como Executar no Wokwi
 
-1.  Importe o arquivo `diagram.json`.
-2.  Importe o código do arquivo `sketch.ino`.
+1.  Importe o arquivo `src/fase-2/um-mapa-do-tesouro/diagram.json`.
+2.  Importe o código do arquivo `src/fase-2/um-mapa-do-tesouro/sketch.ino`.
 3.  **Para Testar a Inteligência**:
     - Com a umidade em 80%, tente ativar uma deficiência clicando em **N**. Observe que a bomba **não ligará** (Trava de encharcamento).
     - Baixe a umidade para 65% e clique em **N**. A bomba **ligará** (Fertirrigação).
