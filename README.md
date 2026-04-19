@@ -15,8 +15,7 @@
 - <a href="https://www.linkedin.com/in/beatriz-barreto-pinto-btrz">Beatriz Moreira Barreto Pinto</a>
 - <a href="https://www.linkedin.com/in/gustoliver-caldas-7a9a33350">Gustavo de Oliveira Caldas</a>
 - <a href="https://www.linkedin.com/in/jfnalves">João Felipe das Neves Alves</a>
-- <a href="https://www.linkedin.com/in/sabrina-gomes-campos-13280642">Sabrina Gomes Campos</a>
-- <a href="https://www.linkedin.com/in/thiago-oliveira-8b6a30291">Thiago Barbosa Silva de Oliveira</a>
+- <a href="https://www.linkedin.com/in/tamiresvferreiras/">Tamires Ferreira</a>
 
 ## 👩‍🏫 Professores:
 
@@ -30,17 +29,13 @@
 
 ## 📜 Descrição
 
-### 📘 Projeto FarmTech Solutions: Agricultura Digital
+# FarmTech Solutions - Sistema de Irrigação e Fertirrigação Inteligente (Fase 2)
 
-Este projeto da FarmTech Solutions aplica Agricultura Digital para otimizar fazendas. A aplicação em Python usa vetores e menus para gerir culturas de Soja e Cana-de-açúcar.
+## 🌿 Sobre o Projeto
 
-#### ⚙️ Funcionalidades
+Este projeto integra o desenvolvimento da Fase 2 da disciplina de IA e IoT da FIAP. A **FarmTech Solutions** apresenta um protótipo avançado para a gestão hídrica e nutricional da **Cana-de-Açúcar**.
 
-- **CRUD:** Cadastro, edição e deleção de dados agrícolas em vetores.
-- **Cálculos:** Gestão de área de plantio e manejo de insumos.
-- **Análise em R:** Estatísticas (média/desvio) e integração com API de clima.
-
-O sistema utiliza Git para versionamento, unindo lógica de programação, análise de dados e fundamentos da Embrapa para apoio à decisão no campo.
+O sistema utiliza um ESP32 para monitorar sensores e decidir, via algoritmo, o acionamento de uma bomba d'água (Relé), focando na eficiência produtiva e na sustentabilidade ambiental (evitando o desperdício de adubo e a saturação do solo).
 
 ## 📁 Estrutura de pastas
 
@@ -60,62 +55,66 @@ Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
 
 - <b>README.md</b>: arquivo que serve como guia e explicação geral sobre o projeto (o mesmo que você está lendo agora).
 
-## 🔧 Como executar o código
+## 🛠️ Hardware Simulado (Wokwi)
 
-### Pré-requisitos
+Para este protótipo, foram adotadas as seguintes substituições didáticas no simulador:
 
-- **Python 3.x**: Para o sistema principal de manejo (`manejo-de-insumos.py`).
-- **R**: Para os scripts de análise (`calculo-media-e-desvio.r` e `analise-meteorologica.r`).
-
-> **Nota**: A biblioteca `jsonlite` para R é necessária para a análise meteorológica. O script tentará instalá-la automaticamente caso não a encontre.
-
-### Passo a Passo
-
-1.  Após clonar o repositório, navegue com o terminal até a pasta `src`, onde os scripts estão localizados.
+- **ESP32 DevKit V1**: Microcontrolador central.
+- **DHT22 (Simulador de Solo)**: Utilizado para monitorar a umidade do solo.
+- **LDR (Simulador de pH)**: Converte a intensidade de luz em uma escala de pH de 0 a 14.
+- **3 Pushbuttons (Sensores de Nutrientes NPK)**: Atuam como sensores de deficiência nutricional.
+- **Relé Azul (Atuador)**: Representa a bomba de irrigação/fertirrigação.
 
 ---
 
-#### 1. Sistema de Manejo de Insumos (Python)
+## 🧠 Lógica de Negócio e Funcionalidades
 
-Este é o sistema principal para cadastrar, gerenciar e calcular dados de insumos e áreas.
+### 1. Monitoramento Nutricional
 
-**Como executar:**
+Diferente de botões comuns, implementamos uma lógica de **Interruptor via Software**:
 
-```bash
-python manejo-de-insumos.py
-```
+- **Estado Padrão**: O solo é considerado saudável (Sem deficiência).
+- **Ação**: Um clique no botão ativa o estado de "Deficiência" (N, P ou K). Um novo clique limpa o estado.
+- **Objetivo**: Facilita a demonstração e simula sensores de nível que alertam quando o nutriente cai abaixo do ideal.
 
-> **Importante:** Para que a análise estatística em R funcione com os dados mais recentes, utilize a **opção 8** do menu para exportar os dados para o arquivo `dados_agricolas.csv`.
+### 2. Trava de Encharcamento e Lixiviação
 
----
+O sistema possui uma trava de segurança baseada na umidade:
 
-#### 2. Análise Estatística (R)
+- **Umidade > 75%**: A bomba é bloqueada, mesmo que falte nutriente. Isso evita o apodrecimento das raízes e a **lixiviação** (lavagem do adubo para o lençol freático).
 
-Este script lê os dados do arquivo `dados_agricolas.csv` e calcula a média e o desvio padrão.
+### 3. Janela de pH e Fertirrigação
 
-**Como executar:**
-
-```bash
-Rscript calculo-media-e-desvio.r
-```
-
-> Se o arquivo `dados_agricolas.csv` não for encontrado, o script utilizará um conjunto de dados de exemplo para demonstração.
+- **Gatilho de Irrigação**: Umidade < 60%.
+- **Gatilho de Fertirrigação**: Ativado se houver deficiência de N, P ou K.
+- **Condição Obrigatória**: O pH deve estar entre **5.5 e 6.5**. Se o solo estiver muito ácido ou muito alcalino, a bomba é desligada para evitar desperdício de insumos que a cana não conseguiria absorver.
 
 ---
 
-#### 3. Análise Meteorológica (R)
+## 📂 Estrutura de Dados (CSV)
 
-Este script consulta uma API de clima para fornecer previsões e interpretações agrícolas para as culturas de Soja e Cana-de-açúcar.
+O sistema exporta via Monitor Serial os dados em tempo real para análise em Python/R:
+`Umidade, pH, Deficiencia_N, Deficiencia_P, Deficiencia_K, Status_Bomba`
 
-**Como executar:**
+---
 
-```bash
-Rscript analise-meteorologica.r
-```
+## 🚀 Como Executar no Wokwi
+
+1.  Importe o arquivo `diagram.json`.
+2.  Importe o código do arquivo `sketch.ino`.
+3.  **Para Testar a Inteligência**:
+    - Com a umidade em 80%, tente ativar uma deficiência clicando em **N**. Observe que a bomba **não ligará** (Trava de encharcamento).
+    - Baixe a umidade para 65% e clique em **N**. A bomba **ligará** (Fertirrigação).
+    - Mude o pH no slider do LDR para 4.0. A bomba **desligará** (Trava química).
+
+---
+
+## 📺 Documentação Adicional
+
 
 ## 🗃 Histórico de lançamentos
 
-- ## 0.1.0 - 21/03/2026
+- ## 0.1.0 - 19/04/2026
 
 ## 📋 Licença
 
