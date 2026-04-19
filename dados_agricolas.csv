@@ -1,0 +1,4 @@
+id,talhao,cultura,comprimento_m,largura_m,area_m2,area_ha,produto,dose_por_ha,quantidade_insumo
+1,A,Soja,50.00,20.00,1000.00,0.1000,Fertilizante NPK,350.00,35.0000
+2,A,Soja,50.00,20.00,1000.00,0.1000,Fertilizante NPK,350.00,35.0000
+3,B,Cana-de-açúcar,100.00,50.00,5000.00,0.5000,Fertilizante NPK,500.00,250.0000
