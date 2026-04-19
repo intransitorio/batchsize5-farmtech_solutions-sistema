@@ -1,0 +1,26 @@
+# Changelog
+
+Todas as mudanças relevantes deste repositório serão documentadas neste arquivo.
+
+## [Unreleased]
+
+### Added
+- Adicionada a pasta `src/ir-alem/` para a atividade extra “Ir Além”.
+- Adicionado o arquivo `src/ir-alem/main.py` com menu principal da aplicação.
+- Adicionado o arquivo `src/ir-alem/funcoes.py` com funções de validação, cálculo e exibição.
+- Adicionado o arquivo `src/ir-alem/arquivos.py` para geração de relatório TXT e exportação JSON.
+- Adicionado o arquivo `src/ir-alem/banco_oracle.py` com conexão Oracle e operações CRUD.
+- Adicionado o arquivo `src/ir-alem/config.py` para configuração do banco Oracle.
+- Adicionado o arquivo `src/ir-alem/schema.sql` com a estrutura da tabela `COLHEITAS_AGRO`.
+- Adicionado o arquivo `src/ir-alem/requirements.txt` com dependências do projeto.
+- Adicionado o arquivo `src/ir-alem/README.md` com instruções da atividade “Ir Além”.
+- Adicionado suporte às culturas `Soja` e `Cana-de-açúcar` para manter coerência com o repositório principal.
+
+### Changed
+- Ajustado o `main.py` para gravar arquivos TXT e JSON sempre em `src/ir-alem/dados/`.
+- Ajustado o `banco_oracle.py` para tratar ausência das bibliotecas `oracledb` e `pandas` sem impedir a execução das funcionalidades locais.
+- Organizada a entrega da atividade extra de forma isolada do restante do repositório.
+
+### Notes
+- Esta implementação corresponde apenas à parte da atividade “Ir Além”.
+- Os demais arquivos do projeto principal foram mantidos sem alteração estrutural.
