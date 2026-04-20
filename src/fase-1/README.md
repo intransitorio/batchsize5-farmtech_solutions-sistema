@@ -15,8 +15,8 @@
 - <a href="https://www.linkedin.com/in/beatriz-barreto-pinto-btrz">Beatriz Moreira Barreto Pinto</a>
 - <a href="https://www.linkedin.com/in/gustoliver-caldas-7a9a33350">Gustavo de Oliveira Caldas</a>
 - <a href="https://www.linkedin.com/in/jfnalves">João Felipe das Neves Alves</a>
-- <a href="https://www.linkedin.com/in/paulocbarreto">Paulo Oliveira</a>
-- <a href="https://www.linkedin.com/in/tamiresvferreiras/">Tamires Ferreira</a>
+- <a href="https://www.linkedin.com/in/sabrina-gomes-campos-13280642">Sabrina Gomes Campos</a>
+- <a href="https://www.linkedin.com/in/thiago-oliveira-8b6a30291">Thiago Barbosa Silva de Oliveira</a>
 
 ## 👩‍🏫 Professores:
 
@@ -30,7 +30,17 @@
 
 ## 📜 Descrição
 
-# FarmTech Solutions - Fase 2
+### 📘 Projeto FarmTech Solutions: Agricultura Digital
+
+Este projeto da FarmTech Solutions aplica Agricultura Digital para otimizar fazendas. A aplicação em Python usa vetores e menus para gerir culturas de Soja e Cana-de-açúcar.
+
+#### ⚙️ Funcionalidades
+
+- **CRUD:** Cadastro, edição e deleção de dados agrícolas em vetores.
+- **Cálculos:** Gestão de área de plantio e manejo de insumos.
+- **Análise em R:** Estatísticas (média/desvio) e integração com API de clima.
+
+O sistema utiliza Git para versionamento, unindo lógica de programação, análise de dados e fundamentos da Embrapa para apoio à decisão no campo.
 
 ## 📁 Estrutura de pastas
 
@@ -50,15 +60,62 @@ Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
 
 - <b>README.md</b>: arquivo que serve como guia e explicação geral sobre o projeto (o mesmo que você está lendo agora).
 
-## 🛠️ FASE 2
+## 🔧 Como executar o código
 
-### CAP 1 - Um Mapa do Tesouro
+### Pré-requisitos
 
-[Documentação Mapa do Tesouro](https://github.com/intransitorio/batchsize5-farmtech_solutions-sistema/tree/main/src/fase-2/um-mapa-do-tesouro)
+- **Python 3.x**: Para o sistema principal de manejo (`manejo-de-insumos.py`).
+- **R**: Para os scripts de análise (`calculo-media-e-desvio.r` e `analise-meteorologica.r`).
 
-[Documentação Ir Alem Python](https://github.com/intransitorio/batchsize5-farmtech_solutions-sistema/tree/main/src/fase-2/um-mapa-do-tesouro/ir-alem-python/README.md)
+> **Nota**: A biblioteca `jsonlite` para R é necessária para a análise meteorológica. O script tentará instalá-la automaticamente caso não a encontre.
 
-[Documentação Ir Alem R-Script](https://github.com/intransitorio/batchsize5-farmtech_solutions-sistema/tree/main/src/fase-2/um-mapa-do-tesouro/ir-alem-r/README.md)
+### Passo a Passo
+
+1.  Após clonar o repositório, navegue com o terminal até a pasta `src`, onde os scripts estão localizados.
+
+---
+
+#### 1. Sistema de Manejo de Insumos (Python)
+
+Este é o sistema principal para cadastrar, gerenciar e calcular dados de insumos e áreas.
+
+**Como executar:**
+
+```bash
+python manejo-de-insumos.py
+```
+
+> **Importante:** Para que a análise estatística em R funcione com os dados mais recentes, utilize a **opção 8** do menu para exportar os dados para o arquivo `dados_agricolas.csv`.
+
+---
+
+#### 2. Análise Estatística (R)
+
+Este script lê os dados do arquivo `dados_agricolas.csv` e calcula a média e o desvio padrão.
+
+**Como executar:**
+
+```bash
+Rscript calculo-media-e-desvio.r
+```
+
+> Se o arquivo `dados_agricolas.csv` não for encontrado, o script utilizará um conjunto de dados de exemplo para demonstração.
+
+---
+
+#### 3. Análise Meteorológica (R)
+
+Este script consulta uma API de clima para fornecer previsões e interpretações agrícolas para as culturas de Soja e Cana-de-açúcar.
+
+**Como executar:**
+
+```bash
+Rscript analise-meteorologica.r
+```
+
+## 🗃 Histórico de lançamentos
+
+- ## 0.1.0 - 21/03/2026
 
 ## 📋 Licença
 
