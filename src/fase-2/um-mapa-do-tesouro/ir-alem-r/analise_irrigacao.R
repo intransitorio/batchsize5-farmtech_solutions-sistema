@@ -1,4 +1,4 @@
-dados <- read.csv("src/fase-2/ir-alem-r/dados_exemplo.csv", stringsAsFactors = FALSE)
+dados <- read.csv("src/fase-2/um-mapa-do-tesouro/ir-alem-r/dados_exemplo.csv", stringsAsFactors = FALSE)
 
 media_umidade <- mean(dados$umidade)
 desvio_umidade <- sd(dados$umidade)

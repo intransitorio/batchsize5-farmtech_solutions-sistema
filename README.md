@@ -54,7 +54,11 @@ Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
 
 ### CAP 1 - Um Mapa do Tesouro
 
-[Documentação](https://github.com/intransitorio/batchsize5-farmtech_solutions-sistema/tree/main/src/fase-2/um-mapa-do-tesouro)
+[Documentação Mapa do Tesouro](https://github.com/intransitorio/batchsize5-farmtech_solutions-sistema/tree/main/src/fase-2/um-mapa-do-tesouro)
+
+[Documentação Ir Alem Python](https://github.com/intransitorio/batchsize5-farmtech_solutions-sistema/tree/main/src/fase-2/um-mapa-do-tesouro/ir-alem-python/README.md)
+
+[Documentação Ir Alem R-Script](https://github.com/intransitorio/batchsize5-farmtech_solutions-sistema/tree/main/src/fase-2/um-mapa-do-tesouro/ir-alem-r/README.md)
 
 ## 📋 Licença
 
