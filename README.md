@@ -20,6 +20,7 @@ Aqui está documentada minha evolução técnica, analítica e estratégica ao l
 - Sistema de Apoio à Agricultura Digital
 - Sistema de Irrigação e Fertirrigação Inteligente
 - Sistema de Apoio à Decisão para Colheita de Cana-de-Açúcar
+- Dashboard — Agronegócio e Desmatamento no Mato Grosso
 
 Este repositório funciona como um **portfólio técnico estruturado**, evidenciando domínio progressivo das competências exigidas na formação.
 
