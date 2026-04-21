@@ -1,86 +1,122 @@
 # FIAP - Faculdade de Informática e Administração Paulista
 
 <p align="center">
-<a href="https://www.fiap.com.br/">
-  <img src="../../../assets/logo-fiap.png" 
-       alt="FIAP - Faculdade de Informática e Administração Paulista" 
-       width="40%">
-</a>
+<a href= "https://www.fiap.com.br/"><img src="assets/logo-fiap.png" alt="FIAP - Faculdade de Informática e Admnistração Paulista" border="0" width=40% height=40%></a>
 </p>
 
 <br>
 
-# Nome do projeto/atividade
+# Sistema de Apoio à Agricultura Digital
 
-## Nome do grupo
+## Grupo Batch Size 5
 
-## 👨‍🎓 Integrantes: 
-- <a href="https://www.linkedin.com/in/sabrina-otoni-22525519b/">Nome do integrante 1</a>
-- <a href="https://www.linkedin.com/in/sabrina-otoni-22525519b/">Nome do integrante 2</a>
-- <a href="https://www.linkedin.com/in/sabrina-otoni-22525519b/">Nome do integrante 3</a> 
-- <a href="https://www.linkedin.com/in/sabrina-otoni-22525519b/">Nome do integrante 4</a> 
-- <a href="https://www.linkedin.com/in/sabrina-otoni-22525519b/">Nome do integrante 5</a>
+## 👨‍🎓 Integrantes:
+
+- <a href="https://www.linkedin.com/in/beatriz-barreto-pinto-btrz">Beatriz Moreira Barreto Pinto</a>
+- <a href="https://www.linkedin.com/in/gustoliver-caldas-7a9a33350">Gustavo de Oliveira Caldas</a>
+- <a href="https://www.linkedin.com/in/jfnalves">João Felipe das Neves Alves</a>
+- <a href="https://www.linkedin.com/in/sabrina-gomes-campos-13280642">Sabrina Gomes Campos</a>
+- <a href="https://www.linkedin.com/in/thiago-oliveira-8b6a30291">Thiago Barbosa Silva de Oliveira</a>
 
 ## 👩‍🏫 Professores:
-### Tutor(a) 
-- <a href="https://www.linkedin.com/in/sabrina-otoni-22525519b/">Nome do Tutor</a>
-### Coordenador(a)
-- <a href="https://www.linkedin.com/in/andregodoichiovato/">Nome do Coordenador</a>
 
+### Tutor(a)
+
+- <a href="https://www.linkedin.com/in/nicollycrsouza">Nicolly Candida Rodrigues de Souza</a>
+
+### Coordenador(a)
+
+- <a href="https://www.linkedin.com/in/andregodoichiovato">André Godoi Chiovato</a>
 
 ## 📜 Descrição
 
-*Descreva seu projeto com base no texto do PBL (até 600 palavras)*
+### 📘 Projeto FarmTech Solutions: Agricultura Digital
 
+Este projeto da FarmTech Solutions aplica Agricultura Digital para otimizar fazendas. A aplicação em Python usa vetores e menus para gerir culturas de Soja e Cana-de-açúcar.
+
+#### ⚙️ Funcionalidades
+
+- **CRUD:** Cadastro, edição e deleção de dados agrícolas em vetores.
+- **Cálculos:** Gestão de área de plantio e manejo de insumos.
+- **Análise em R:** Estatísticas (média/desvio) e integração com API de clima.
+
+O sistema utiliza Git para versionamento, unindo lógica de programação, análise de dados e fundamentos da Embrapa para apoio à decisão no campo.
 
 ## 📁 Estrutura de pastas
 
 Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
 
-- <b>docs</b>: Pasta destinada à documentação textual, incluindo brainstorm, atas e registros de reuniões, desenhos, prints, diagramas, storyboard, estratégia de IA e arquitetura do sensor (ESP32, Wokwi, etc.).
+- <b>.github</b>: Nesta pasta ficarão os arquivos de configuração específicos do GitHub que ajudam a gerenciar e automatizar processos no repositório.
 
-- <b>src</b>: Todo o código fonte desenvolvido, como scripts em Python, R, JS ou HTML, notebooks, códigos para ESP32/Arduino, APIs ou microsserviços, além de modelos, inferências e logs.
+- <b>assets</b>: aqui estão os arquivos relacionados a elementos não-estruturados deste repositório, como imagens.
 
-- <b>data</b>: Contém os dados utilizados, como arquivos CSV, Excel, JSON, bases sintéticas e amostras geradas.
+- <b>config</b>: Posicione aqui arquivos de configuração que são usados para definir parâmetros e ajustes do projeto.
 
-- <b>entregas</b>: Reúne tudo o que será enviado no portal, como vídeos (ou links), PDFs, arquivos finais, prints de tela e roteiro.
+- <b>document</b>: aqui estão todos os documentos do projeto que as atividades poderão pedir. Na subpasta "other", adicione documentos complementares e menos importantes.
 
-- <b>README.md</b>: Arquivo que serve como guia e explicação geral sobre o projeto (o mesmo que você está lendo agora).
+- <b>scripts</b>: Posicione aqui scripts auxiliares para tarefas específicas do seu projeto. Exemplo: deploy, migrações de banco de dados, backups.
 
+- <b>src</b>: Todo o código fonte criado para o desenvolvimento do projeto ao longo das 7 fases.
 
-‼️ OBSERVAÇÃO DO TUTOR, favor desconsiderar do seu arquivo final: não há obrigação de usar todas as pastas, use apenas o que fizer SENTIDO para a entrega. ‼️
-
-
-## 📎 Links e Observações
-
-- <b>Listagem de Links</b>: Links do projeto (ex. vídeos da entrega, páginas, etc.), 
-
-- <b>Explicação de decisões técnicas</b>: Observações do projeto,
-
-- <b>Observações Gerais</b>: Caso o projeto seja relacionado à alguma competição, deixar registrado no README se aceita ou não participar.
-
+- <b>README.md</b>: arquivo que serve como guia e explicação geral sobre o projeto (o mesmo que você está lendo agora).
 
 ## 🔧 Como executar o código
 
-*Acrescentar as informações necessárias sobre pré-requisitos (IDEs, serviços, bibliotecas etc.) e instalação básica do projeto, descrevendo eventuais versões utilizadas. Colocar um passo a passo de como o leitor pode baixar o seu código e executá-lo a partir de sua máquina ou seu repositório.*
+### Pré-requisitos
 
+- **Python 3.x**: Para o sistema principal de manejo (`manejo-de-insumos.py`).
+- **R**: Para os scripts de análise (`calculo-media-e-desvio.r` e `analise-meteorologica.r`).
 
-## 🗃 Histórico de lançamentos
+> **Nota**: A biblioteca `jsonlite` para R é necessária para a análise meteorológica. O script tentará instalá-la automaticamente caso não a encontre.
 
-* 0.5.0 - XX/XX/2024
-    * 
-* 0.4.0 - XX/XX/2024
-    * 
-* 0.3.0 - XX/XX/2024
-    * 
-* 0.2.0 - XX/XX/2024
-    * 
-* 0.1.0 - XX/XX/2024
-    *
+### Passo a Passo
+
+1.  Após clonar o repositório, navegue com o terminal até a pasta `src`, onde os scripts estão localizados.
 
 ---
 
+#### 1. Sistema de Manejo de Insumos (Python)
+
+Este é o sistema principal para cadastrar, gerenciar e calcular dados de insumos e áreas.
+
+**Como executar:**
+
+```bash
+python manejo-de-insumos.py
+```
+
+> **Importante:** Para que a análise estatística em R funcione com os dados mais recentes, utilize a **opção 8** do menu para exportar os dados para o arquivo `dados_agricolas.csv`.
+
+---
+
+#### 2. Análise Estatística (R)
+
+Este script lê os dados do arquivo `dados_agricolas.csv` e calcula a média e o desvio padrão.
+
+**Como executar:**
+
+```bash
+Rscript calculo-media-e-desvio.r
+```
+
+> Se o arquivo `dados_agricolas.csv` não for encontrado, o script utilizará um conjunto de dados de exemplo para demonstração.
+
+---
+
+#### 3. Análise Meteorológica (R)
+
+Este script consulta uma API de clima para fornecer previsões e interpretações agrícolas para as culturas de Soja e Cana-de-açúcar.
+
+**Como executar:**
+
+```bash
+Rscript analise-meteorologica.r
+```
+
+## 🗃 Histórico de lançamentos
+
+- ## 0.1.0 - 21/03/2026
 
 ## 📋 Licença
 
-<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/SabrinaOtoni/TEMPLATE-FIAP-GRAD-ON-IA">MODELO GIT FIAP</a> por <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://fiap.com.br">FIAP</a> está licenciado sobre <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution 4.0 International</a>.</p>
+<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/agodoi/template">MODELO GIT FIAP</a> por <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://fiap.com.br">Fiap</a> está licenciado sobre <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution 4.0 International</a>.</p>
