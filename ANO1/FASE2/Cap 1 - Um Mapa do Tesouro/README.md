@@ -8,8 +8,7 @@
 
 ---
 
-# Sistema de Apoio à Agricultura Digital
-
+# Sistema Inteligente de Irrigação e Fertirrigação
 
 ## Grupo Batch Size 5
 
@@ -29,7 +28,6 @@
 
 ---
 
-# FarmTech Solutions - Sistema Inteligente de Irrigação e Fertirrigação
 
 ## Descrição do Projeto
 
