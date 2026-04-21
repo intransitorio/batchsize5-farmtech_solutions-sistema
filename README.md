@@ -17,16 +17,9 @@ Este repositório tem como objetivo centralizar **todos os trabalhos, projetos, 
 
 Aqui está documentada minha evolução técnica, analítica e estratégica ao longo do curso, contemplando:
 
-- Projetos acadêmicos (PBLs, Global Solutions, Challenges)
-- Implementações práticas de IA e Machine Learning
-- Modelagem de dados e engenharia de dados
-- Experimentos com Deep Learning
-- Aplicações com IA Generativa
-- Integrações com IoT e sensores
-- Documentações técnicas completas
-- Arquiteturas de solução
-- Estudos dirigidos e explorações técnicas
-- ...
+- Sistema de Apoio à Agricultura Digital
+- Sistema de Irrigação e Fertirrigação Inteligente
+- Sistema de Apoio à Decisão para Colheita de Cana-de-Açúcar
 
 Este repositório funciona como um **portfólio técnico estruturado**, evidenciando domínio progressivo das competências exigidas na formação.
 
@@ -51,10 +44,12 @@ Organizar e versionar todo o fluxo de desenvolvimento acadêmico, garantindo:
 │
 ├── 📂 ANO1
 │   ├── 📂 FASE1
-│   │   ├── 📂 NOME-DA-ATIVIDADE1
-│   │   ├── 📂 NOME-DA-ATIVIDADE2
-│   │   ├── 📂 NOME-DA-ATIVIDADE3
+│   │   ├── 📂 Cap 1 - Play no seu Desenvolvimento como Dev
+│   │   
 │   ├── 📂 FASE2
+│   │   ├── 📂 Cap 1 - Um Mapa do Tesouro
+│   │   ├── 📂 Cap 6 - Python e além
+│   │   └── 📂 Cap 7 - Decolando com ciência de dados 
 │   ├── 📂 FASE3
 │   └── 📂 ...
 │
@@ -63,6 +58,9 @@ Organizar e versionar todo o fluxo de desenvolvimento acadêmico, garantindo:
 │   ├── 📂 FASE2
 │   ├── 📂 FASE3
 │   └── 📂 ...
+│
+├── 📂 assets
+│   └── logo-fiap.png
 │
 └── README.md
 ```
