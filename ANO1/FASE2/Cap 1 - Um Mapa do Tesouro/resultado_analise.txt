@@ -1,0 +1,4 @@
+media_umidade=59
+desvio_umidade=2.74
+media_ph=6.1
+recomendacao=Ligar irrigacao
