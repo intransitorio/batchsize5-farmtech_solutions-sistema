@@ -1,0 +1,111 @@
+{
+    "talhoes": [
+        {
+            "id": 1,
+            "nome": "Talhão A",
+            "area_ha": 12.5,
+            "variedade": "RB966928",
+            "data_plantio": "2025-03-10"
+        },
+        {
+            "id": 2,
+            "nome": "Talhão B",
+            "area_ha": 8.0,
+            "variedade": "CTC4",
+            "data_plantio": "2025-01-18"
+        },
+        {
+            "id": 3,
+            "nome": "Talhão C",
+            "area_ha": 15.2,
+            "variedade": "SP80-3280",
+            "data_plantio": "2024-12-05"
+        }
+    ],
+    "colheitas": [
+        {
+            "id": 1,
+            "id_talhao": 1,
+            "nome_talhao": "Talhão A",
+            "area_ha": 12.5,
+            "data_colheita": "2026-04-10",
+            "modo": "mecanizada",
+            "producao_ton": 980.0,
+            "perda_percentual": 11.5,
+            "perda_toneladas": 112.7,
+            "umidade_pct": 74.0,
+            "brix": 19.4,
+            "meses_plantio": 13
+        },
+        {
+            "id": 2,
+            "id_talhao": 1,
+            "nome_talhao": "Talhão A",
+            "area_ha": 12.5,
+            "data_colheita": "2026-04-18",
+            "modo": "manual",
+            "producao_ton": 955.0,
+            "perda_percentual": 6.2,
+            "perda_toneladas": 59.21,
+            "umidade_pct": 71.0,
+            "brix": 20.0,
+            "meses_plantio": 13
+        },
+        {
+            "id": 3,
+            "id_talhao": 2,
+            "nome_talhao": "Talhão B",
+            "area_ha": 8.0,
+            "data_colheita": "2026-03-22",
+            "modo": "mecanizada",
+            "producao_ton": 620.0,
+            "perda_percentual": 16.8,
+            "perda_toneladas": 104.16,
+            "umidade_pct": 86.0,
+            "brix": 17.2,
+            "meses_plantio": 14
+        },
+        {
+            "id": 4,
+            "id_talhao": 2,
+            "nome_talhao": "Talhão B",
+            "area_ha": 8.0,
+            "data_colheita": "2026-04-02",
+            "modo": "manual",
+            "producao_ton": 640.0,
+            "perda_percentual": 7.1,
+            "perda_toneladas": 45.44,
+            "umidade_pct": 79.0,
+            "brix": 18.6,
+            "meses_plantio": 14
+        },
+        {
+            "id": 5,
+            "id_talhao": 3,
+            "nome_talhao": "Talhão C",
+            "area_ha": 15.2,
+            "data_colheita": "2026-04-05",
+            "modo": "mecanizada",
+            "producao_ton": 1210.0,
+            "perda_percentual": 9.4,
+            "perda_toneladas": 113.74,
+            "umidade_pct": 68.0,
+            "brix": 21.1,
+            "meses_plantio": 16
+        },
+        {
+            "id": 6,
+            "id_talhao": 3,
+            "nome_talhao": "Talhão C",
+            "area_ha": 15.2,
+            "data_colheita": "2026-04-16",
+            "modo": "mecanizada",
+            "producao_ton": 1195.0,
+            "perda_percentual": 10.2,
+            "perda_toneladas": 121.89,
+            "umidade_pct": 70.0,
+            "brix": 20.8,
+            "meses_plantio": 16
+        }
+    ]
+}

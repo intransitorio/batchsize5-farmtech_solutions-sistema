@@ -1,0 +1,3 @@
+maior_probabilidade_6h=13
+chuva_prevista=false
+comando_serial=0

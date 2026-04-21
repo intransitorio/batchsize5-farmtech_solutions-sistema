@@ -1,0 +1,34 @@
+SISTEMA DE APOIO À DECISÃO PARA COLHEITA DE CANA-DE-AÇÚCAR
+ETAPA 5 — Histórico persistido em TXT
+========================================================================
+
+TALHÕES CADASTRADOS
+------------------------------------------------------------------------
+ID   1 | Nome: Talhão A | Área: 12.50 ha | Variedade: RB966928 | Plantio: 2025-03-10
+ID   2 | Nome: Talhão B | Área: 8.00 ha | Variedade: CTC4 | Plantio: 2025-01-18
+ID   3 | Nome: Talhão C | Área: 15.20 ha | Variedade: SP80-3280 | Plantio: 2024-12-05
+
+HISTÓRICO DE COLHEITAS
+------------------------------------------------------------------------
+ID   1 | Talhão: Talhão A | Data: 2026-04-10 | Modo: mecanizada | Produção: 980.00 t | Perda: 11.50% (112.70 t) | Umidade: 74.00% | Brix: 19.40
+ID   2 | Talhão: Talhão A | Data: 2026-04-18 | Modo: manual | Produção: 955.00 t | Perda: 6.20% (59.21 t) | Umidade: 71.00% | Brix: 20.00
+ID   3 | Talhão: Talhão B | Data: 2026-03-22 | Modo: mecanizada | Produção: 620.00 t | Perda: 16.80% (104.16 t) | Umidade: 86.00% | Brix: 17.20
+ID   4 | Talhão: Talhão B | Data: 2026-04-02 | Modo: manual | Produção: 640.00 t | Perda: 7.10% (45.44 t) | Umidade: 79.00% | Brix: 18.60
+ID   5 | Talhão: Talhão C | Data: 2026-04-05 | Modo: mecanizada | Produção: 1210.00 t | Perda: 9.40% (113.74 t) | Umidade: 68.00% | Brix: 21.10
+ID   6 | Talhão: Talhão C | Data: 2026-04-16 | Modo: mecanizada | Produção: 1195.00 t | Perda: 10.20% (121.89 t) | Umidade: 70.00% | Brix: 20.80
+
+RESUMO GERAL
+------------------------------------------------------------------------
+Quantidade de colheitas : 6
+Produção total (t)       : 5600.00
+Perda total (t)          : 557.14
+Média de perda (%)       : 10.20
+Média de eficiência      : 89.80
+Média de produtividade   : 78.42 t/ha
+Colheitas manuais        : 2
+Colheitas mecanizadas    : 4
+
+COMPARATIVO MANUAL VS. MECANIZADA
+------------------------------------------------------------------------
+Modo: manual | Qtd: 2 | Produção média: 797.50 t | Perda média: 6.65% | Eficiência média: 93.35 | Desvio médio ref.: +1.65
+Modo: mecanizada | Qtd: 4 | Produção média: 1001.25 t | Perda média: 11.97% | Eficiência média: 88.03 | Desvio médio ref.: -3.02
