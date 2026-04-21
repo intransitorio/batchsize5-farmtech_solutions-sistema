@@ -9,81 +9,81 @@
 # ============================================================
 # PACOTES
 # ============================================================
-pacotes <- c("shiny","ggplot2","dplyr","scales","shinydashboard","DT","leaflet","ggrepel")
+pacotes <- c("shiny","ggplot2","dplyr","scales","shinydashboard","DT","leaflet","ggrepel","readxl")
 for (p in pacotes) {
   if (!require(p, character.only = TRUE))
     install.packages(p, repos = "https://cloud.r-project.org")
   library(p, character.only = TRUE)
 }
 
-# ============================================================
-# DADOS (Item 2: 35 linhas, 4 tipos de variável obrigatórios)
-# Ano              = quantitativa discreta
-# Area_Plantada_ha = quantitativa contínua
-# Cultura_Principal= qualitativa nominal
-# Nivel_Desmatamento= qualitativa ordinal
-# ============================================================
-dados <- data.frame(
-  Municipio = c(
-    "Sorriso","Sapezal","Campo Novo do Parecis","Nova Mutum","Lucas do Rio Verde",
-    "Diamantino","Querência","Nova Ubiratã","Tapurah","Primavera do Leste",
-    "Campo Verde","Rondonópolis","Sinop","Vera","Brasnorte",
-    "Ipiranga do Norte","Canarana","Água Boa","Tangará da Serra","Pedra Preta",
-    "Paranatinga","Porto dos Gaúchos","Juara","Alta Floresta","Colíder",
-    "Guarantã do Norte","Matupá","Peixoto de Azevedo","São Félix do Araguaia",
-    "Juína","Cotriguaçu","Aripuanã","Nova Bandeirantes","Carlinda","Apiacás"
-  ),
-  Ano = rep(2023L, 35),                          # quantitativa DISCRETA
-  Area_Plantada_ha = c(                          # quantitativa CONTÍNUA
-    850000,620000,590000,480000,460000,430000,410000,395000,370000,355000,
-    340000,280000,265000,255000,240000,230000,218000,205000,195000,185000,
-    175000,165000,152000,42000,68000,55000,78000,35000,28000,45000,
-    18000,12000,9500,32000,7800
-  ),
-  Producao_ton = c(
-    3060000,2108000,2006000,1680000,1610000,1462000,1394000,1343000,1258000,1207000,
-    1156000,952000,901000,867000,816000,782000,741200,697000,663000,629000,
-    595000,561000,516800,142800,231200,187000,265200,119000,95200,153000,
-    61200,40800,32300,108800,26520
-  ),
-  Area_Desmatada_km2 = c(
-    12.4,28.7,31.2,18.5,9.8,44.3,87.6,62.1,15.2,22.8,
-    19.4,11.3,53.7,41.9,78.4,25.6,96.3,112.8,14.7,8.9,
-    134.5,158.2,143.7,189.4,76.8,102.3,88.6,211.3,67.4,124.9,
-    247.8,198.6,312.4,58.3,278.9
-  ),
-  Alertas = c(
-    38,72,89,47,25,115,198,143,39,58,
-    49,29,131,102,176,64,214,251,37,22,
-    298,341,319,412,172,228,197,463,152,278,
-    534,431,671,132,602
-  ),
-  Cultura_Principal = c(                         # qualitativa NOMINAL
-    "Soja","Algodão","Algodão","Soja","Soja","Soja","Soja","Soja","Soja","Algodão",
-    "Soja","Soja","Soja","Soja","Soja","Soja","Soja","Soja","Milho","Algodão",
-    "Soja","Soja","Milho","Milho","Milho","Milho","Soja","Milho","Milho","Milho",
-    "Milho","Milho","Milho","Milho","Milho"
-  ),
-  Nivel_Desmatamento = factor(                   # qualitativa ORDINAL
-    c("Baixo","Médio","Médio","Baixo","Baixo","Alto","Alto","Alto","Baixo","Médio",
-      "Baixo","Baixo","Alto","Médio","Alto","Médio","Muito Alto","Muito Alto","Baixo","Baixo",
-      "Muito Alto","Muito Alto","Muito Alto","Muito Alto","Alto","Muito Alto","Alto",
-      "Muito Alto","Alto","Muito Alto","Muito Alto","Muito Alto","Muito Alto","Alto","Muito Alto"),
-    levels = c("Baixo","Médio","Alto","Muito Alto"), ordered = TRUE
-  ),
-  Lat = c(
-    -12.54,-13.52,-13.63,-13.08,-13.06,-14.40,-12.60,-13.53,-12.68,-15.56,
-    -15.54,-16.47,-11.86,-12.30,-12.16,-12.16,-13.54,-14.00,-14.62,-16.78,
-    -14.43,-11.54,-11.27,-9.87,-11.24,-9.79,-10.25,-9.74,-11.58,-11.37,
-    -9.84,-9.95,-9.68,-10.47,-9.54
-  ),
-  Lon = c(
-    -55.71,-58.78,-57.90,-56.08,-55.93,-56.44,-52.20,-54.69,-55.89,-54.28,
-    -55.17,-54.64,-55.51,-54.92,-57.75,-57.32,-52.27,-52.18,-57.50,-54.59,
-    -54.04,-57.00,-57.53,-56.08,-55.45,-54.87,-54.94,-54.79,-50.67,-58.74,
-    -58.23,-59.44,-57.54,-55.83,-57.48
-  ),
+pasta_script  <- tryCatch(
+  dirname(rstudioapi::getActiveDocumentContext()$path),
+  error = function(e) getwd()  
+)
+caminho_excel <- file.path(pasta_script, "Planilha_Agro_Desmatamento_no_Mato_Grosso.xlsx")
+
+if (!file.exists(caminho_excel)) {
+  stop(
+    "\n\nArquivo nao encontrado:\n  ", caminho_excel,
+    "\n\nVerifique se 'Planilha_Agro_Desmatamento_no_Mato_Grosso.xlsx' esta",
+    " na mesma pasta do script R.\n"
+  )
+}
+
+# FALLBACK INTERNO: O data frame a seguir cumpre a função de garantir a análise e exibição de dados em caso de erro durante o processamento da base contida no arquivo Excel. 
+# Dados idênticos à planilha Dados_MT_2023 (IBGE/PAM 2023 | INPE/PRODES 2023)
+
+dados_fallback <- data.frame(
+  Municipio = c("Sorriso", "Sapezal", "Campo Novo do Parecis", "Nova Mutum", "Lucas do Rio Verde", "Diamantino", "Querência", "Nova Ubiratã", "Tapurah", "Primavera do Leste", "Campo Verde", "Rondonópolis", "Sinop", "Vera", "Brasnorte", "Ipiranga do Norte", "Canarana", "Água Boa", "Tangará da Serra", "Pedra Preta", "Paranatinga", "Porto dos Gaúchos", "Juara", "Alta Floresta", "Colíder", "Guarantã do Norte", "Matupá", "Peixoto de Azevedo", "São Félix do Araguaia", "Juína", "Cotriguaçu", "Aripuanã", "Nova Bandeirantes", "Carlinda", "Apiacás"),
+  Ano = c(2023, 2023, 2023, 2023, 2023, 2023, 2023, 2023, 2023, 2023, 2023, 2023, 2023, 2023, 2023, 2023, 2023, 2023, 2023, 2023, 2023, 2023, 2023, 2023, 2023, 2023, 2023, 2023, 2023, 2023, 2023, 2023, 2023, 2023, 2023),
+  Lon = c(-55.72, -58.82, -57.89, -56.08, -55.7243, -56.44, -52.59, -53.83, -56.55, -54.28, -55.17, -54.63, -55.5, -55.05, -57.92, -57.03, -52.27, -52.0, -57.53, -54.29, -54.05, -57.23, -58.76, -56.09, -55.45, -55.52, -54.97, -54.9658, -50.66, -59.19, -58.44, -59.45, -57.02, -55.02, -57.37),
+  Lat = c(-12.54, -13.54, -13.63, -13.03, -13.0494, -14.41, -13.64, -13.53, -11.78, -14.41, -15.55, -16.47, -11.86, -13.42, -12.15, -11.78, -13.42, -13.63, -14.63, -16.63, -13.42, -11.09, -11.27, -9.87, -11.0, -10.92, -10.08, -10.2146, -11.6, -11.37, -9.47, -10.17, -9.82, -10.45, -9.97),
+  Area_Plantada_ha = c(850000, 620000, 590000, 480000, 460000, 430000, 410000, 395000, 370000, 355000, 340000, 280000, 265000, 255000, 240000, 230000, 218000, 205000, 195000, 185000, 175000, 165000, 152000, 42000, 68000, 55000, 78000, 35000, 28000, 45000, 18000, 12000, 9500, 32000, 7800),
+  Producao_ton = c(3060000, 2194800, 2076800, 1718400, 1665200, 1483500, 1402200, 1343000, 1313500, 1235400, 1190000, 968800, 895700, 854250, 796800, 791200, 719400, 672400, 686400, 643800, 563500, 524700, 478800, 130200, 209440, 167750, 243360, 104300, 89600, 138600, 52560, 35400, 27550, 97600, 22464),
+  Area_Desmatada_km2 = c(12.4, 28.7, 31.2, 18.5, 9.8, 44.3, 87.6, 62.1, 15.2, 22.8, 19.4, 11.3, 53.7, 41.9, 78.4, 25.6, 96.3, 112.8, 14.7, 8.9, 134.5, 158.2, 143.7, 189.4, 76.8, 102.3, 88.6, 211.3, 67.4, 124.9, 247.8, 198.6, 312.4, 58.3, 278.9),
+  Alertas = c(38, 72, 89, 47, 25, 115, 198, 143, 39, 58, 49, 29, 131, 102, 176, 64, 214, 251, 37, 22, 298, 341, 319, 412, 172, 228, 197, 463, 152, 278, 534, 431, 671, 132, 602),
+  Cultura_Principal = c("Soja", "Algodão", "Algodão", "Soja", "Soja", "Soja", "Soja", "Soja", "Soja", "Algodão", "Soja", "Soja", "Soja", "Soja", "Soja", "Soja", "Soja", "Soja", "Milho", "Algodão", "Soja", "Soja", "Milho", "Milho", "Milho", "Milho", "Soja", "Milho", "Milho", "Milho", "Milho", "Milho", "Milho", "Milho", "Milho"),
+  Nivel_Desmatamento = c("Baixo", "Médio", "Médio", "Baixo", "Baixo", "Alto", "Alto", "Alto", "Baixo", "Médio", "Baixo", "Baixo", "Alto", "Médio", "Alto", "Médio", "Muito Alto", "Muito Alto", "Baixo", "Baixo", "Muito Alto", "Muito Alto", "Muito Alto", "Muito Alto", "Alto", "Muito Alto", "Alto", "Muito Alto", "Alto", "Muito Alto", "Muito Alto", "Muito Alto", "Muito Alto", "Alto", "Muito Alto"),
   stringsAsFactors = FALSE
+)
+
+dados <- tryCatch({
+  raw <- read_excel(
+    caminho_excel,
+    sheet     = "Dados_MT_2023",
+    skip      = 1,    # pula a linha de tipo de variável
+    col_names = TRUE  # usa a linha 2 como cabeçalho
+  )
+  colnames(raw) <- c(
+    "Municipio", "Ano", "Lon", "Lat", "Area_Plantada_ha",
+    "Producao_ton", "Area_Desmatada_km2", "Alertas",
+    "Cultura_Principal", "Nivel_Desmatamento"
+  )
+  message("Dados carregados do Excel com sucesso.")
+  raw
+}, error = function(e) {
+  warning(paste0(
+    "\n[AVISO] Não foi possível ler o arquivo Excel:\n  ", conditionMessage(e),
+    "\n  -> Usando base de dados interna (fallback). Os resultados são idênticos."
+  ))
+  dados_fallback
+})
+
+dados$Municipio          <- as.character(dados$Municipio)
+dados$Ano                <- as.integer(dados$Ano)
+dados$Lon                <- as.numeric(dados$Lon)
+dados$Lat                <- as.numeric(dados$Lat)
+dados$Area_Plantada_ha   <- as.numeric(dados$Area_Plantada_ha)
+dados$Producao_ton       <- as.numeric(dados$Producao_ton)
+dados$Area_Desmatada_km2 <- as.numeric(dados$Area_Desmatada_km2)
+dados$Alertas            <- as.integer(dados$Alertas)
+dados$Cultura_Principal  <- as.character(dados$Cultura_Principal)
+
+# Reaplica a ordem ordinal de Nivel_Desmatamento
+dados$Nivel_Desmatamento <- factor(
+  dados$Nivel_Desmatamento,
+  levels  = c("Baixo", "Médio", "Alto", "Muito Alto"),
+  ordered = TRUE
 )
 
 cores_nivel   <- c("Baixo"="#1a9fa0","Médio"="#41ab5d","Alto"="#006d2c","Muito Alto"="#00441b")
@@ -238,9 +238,6 @@ plot_desmatamento <- function() {
           panel.grid.minor = element_blank())
 }
 
-# ============================================================
-# TEXTOS LEGENDA + CONCLUSÃO (painel lateral)
-# ============================================================
 mk_conclusao <- function(...) {
   itens <- list(...)
   li    <- paste0("<li>", unlist(itens), "</li>", collapse = "")
@@ -307,8 +304,8 @@ insights <- list(
       <li><span style='color:#a8ddb5;font-weight:bold;'>Algodão (verde claro):</span> nicho em Sapezal e Primavera do Leste.</li>
     </ul>",
     mk_conclusao(
-      "<b>Soja (57%):</b> cultura dominante nos municípios consolidados do sul.",
-      "<b>Milho (34%):</b> sinaliza municípios em expansão na fronteira agrícola.",
+      "<b>Soja (51%):</b> cultura dominante nos municípios consolidados do sul.",
+      "<b>Milho (37%):</b> sinaliza municípios em expansão na fronteira agrícola.",
       "O milho marca a avanço produtivo em direção à Amazônia Legal."
     )
   ),
@@ -329,9 +326,6 @@ insights <- list(
   )
 )
 
-# ============================================================
-# UI
-# ============================================================
 ui <- dashboardPage(
   skin = "blue",
 
@@ -533,8 +527,8 @@ ui <- dashboardPage(
               agrícola no norte da Amazônia Legal.</p>
 
               <div class='sec-title'>2. Atendimento aos Requisitos</div>
-              <p><span class='item-badge'>Item 1</span> <b>Consulta dos dados das bases oficiais do IBGE (PAM 2023),a Embrapa (Dados Econômicos da Soja, 2023),MAPA/SPA (Os 100 Municípios — PAM 2023, outubro de 2024) e do INPE (PRODES/DETER 2023).</b><br></p>
-                 
+              <p><span class='item-badge'>Item 1</span> <b>Consulta dos dados das bases oficiais do IBGE (PAM 2023), a Embrapa (Dados Econômicos da Soja, 2023), MAPA/SPA (Os 100 Municípios — PAM 2023, outubro de 2024) e do INPE (PRODES/DETER 2023).</b></p>
+
               <p><span class='item-badge'>Item 2</span> <b>Base de dados com 30+ linhas e 4 tipos de variável:</b><br>
               A base contém <b>35 municípios</b> como unidades de observação, com as quatro
               colunas obrigatórias: <b>Ano</b> (quantitativa discreta: valor inteiro 2023),
@@ -616,7 +610,6 @@ ui <- dashboardPage(
                 <li><b>Qualitativa Ordinal:</b> Nível de Desmatamento (Baixo &lt; Médio &lt; Alto &lt; Muito Alto)</li>
               </ul>
 
-             ```html
               <div class='sec-title'>6. Fontes de Dados</div>
               <ul>
                 <li><b>IBGE:</b> Produção Agrícola Municipal (PAM), edição 2023, publicado em outubro de 2024</li>
@@ -643,9 +636,6 @@ ui <- dashboardPage(
   ) # fim dashboardBody
 ) # fim dashboardPage
 
-# ============================================================
-# SERVER
-# ============================================================
 server <- function(input, output) {
 
   output$mapa_mt <- renderLeaflet({
@@ -735,4 +725,4 @@ server <- function(input, output) {
 
 } # fim server
 
-shinyApp(ui, server) 
+shinyApp(ui, server)
