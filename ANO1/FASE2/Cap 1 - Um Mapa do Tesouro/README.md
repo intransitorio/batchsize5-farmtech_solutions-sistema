@@ -116,7 +116,7 @@ O sistema exporta via Monitor Serial os dados em tempo real para análise em Pyt
 - **Link do Projeto**: [Projeto no Wokwi](https://wokwi.com/projects/461645404748264449)
 - **Diagrama do circuito**:
 
-  <img src="../../../assets/fase-2/um-mapa-do-tesouro/diagrama.png" alt="FIAP - Faculdade de Informática e Admnistração Paulista" border="0" width=100% height=100%>
+  <img src="assets/diagrama.png" alt="FIAP - Faculdade de Informática e Admnistração Paulista" border="0" width=100% height=100%>
 
 # Ir Além 2 - Análise em R
 
