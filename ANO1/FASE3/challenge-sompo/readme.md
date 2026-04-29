@@ -413,13 +413,13 @@ A solução será projetada respeitando os seguintes princípios:
 
 ## 11. Equipe
 
-| Nome     | RM       | Turma |
-| -------- | -------- | ----- |
-| [Nome 1] | RM-XXXXX | X     |
-| [Nome 2] | RM-XXXXX | X     |
-| [Nome 3] | RM-XXXXX | X     |
-| [Nome 4] | RM-XXXXX | X     |
-| [Nome 5] | RM-XXXXX | X     |
+| Nome     | RM       |
+| -------- | -------- |
+| Beatriz Moreira Barreto Pinto | RM-573311 |
+| Gustavo de Oliveira Caldas | RM-573015|
+| João Felipe das Neves Alves | RM-569270 |
+| Paulo Cesar Barreto da Silva | RM-571441 |
+| Tamires Vitória Ferreira dos Santos | RM-571256 |
 
 ---
 
