@@ -24,7 +24,7 @@
 - <a href="https://www.linkedin.com/in/beatriz-barreto-pinto-btrz">Beatriz Moreira Barreto Pinto</a>
 - <a href="https://www.linkedin.com/in/gustoliver-caldas-7a9a33350">Gustavo de Oliveira Caldas</a>
 - <a href="https://www.linkedin.com/in/jfnalves">João Felipe das Neves Alves</a>
-- <a href="https://www.linkedin.com/in/paulocbarreto">Paulo Oliveira</a>
+- <a href="https://www.linkedin.com/in/paulocbarreto">Paulo Barreto</a>
 - <a href="https://www.linkedin.com/in/tamiresvferreiras/">Tamires Ferreira</a>
 
 ## 👩‍🏫 Professores:
