@@ -1,8 +1,38 @@
-# 🌾 Sompo RiskRadar — Sistema Preditivo de Risco para Equipamentos Agrícolas
+# FIAP - Faculdade de Informática e Administração Paulista
+
+<p align="center">
+  <a href="https://www.fiap.com.br/">
+    <img src="../../../assets/logo-fiap.png" alt="FIAP - Faculdade de Informática e Administração Paulista" width="40%">
+  </a>
+</p>
+
+
+
+
+
+
+
+
+
+# Sompo RiskRadar - Sistema Preditivo de Risco para Equipamentos Agrícolas
 
 > **Challenge FIAP x Sompo Seguros** | Sprint 1
 
 ---
+
+## 👨‍🎓 Integrantes:
+- <a href="https://www.linkedin.com/in/beatriz-barreto-pinto-btrz">Beatriz Moreira Barreto Pinto</a>
+- <a href="https://www.linkedin.com/in/gustoliver-caldas-7a9a33350">Gustavo de Oliveira Caldas</a>
+- <a href="https://www.linkedin.com/in/jfnalves">João Felipe das Neves Alves</a>
+- <a href="https://www.linkedin.com/in/paulocbarreto">Paulo Oliveira</a>
+- <a href="https://www.linkedin.com/in/tamiresvferreiras/">Tamires Ferreira</a>
+
+## 👩‍🏫 Professores:
+### Tutor(a)
+- <a href="https://www.linkedin.com/in/nicollycrsouza">Nicolly Candida Rodrigues de Souza</a>
+
+### Coordenador(a)
+- <a href="https://www.linkedin.com/in/andregodoichiovato">André Godoi Chiovato</a>
 
 ## 📋 Sumário
 
@@ -25,7 +55,7 @@
 
 ### Contexto
 
-O agronegócio brasileiro depende fortemente de maquinários de alto valor — colheitadeiras, tratores, plantadeiras — que operam em condições ambientais adversas e variáveis. A Sompo Seguros, parceira deste desafio, identifica um problema central em sua carteira: **a alta sinistralidade de equipamentos agrícolas causada por eventos que poderiam ser previstos e evitados**.
+O agronegócio brasileiro depende fortemente de maquinários de alto valor, colheitadeiras, tratores, plantadeiras, que operam em condições ambientais adversas e variáveis. A Sompo Seguros, parceira deste desafio, identifica um problema central em sua carteira: **a alta sinistralidade de equipamentos agrícolas causada por eventos que poderiam ser previstos e evitados**.
 
 Atualmente, a tomada de decisão dos gestores de frota é majoritariamente **reativa**: o dano ocorre, o operador reporta, a seguradora aciona o processo de sinistro. Não há um sistema que antecipe o risco, oriente o gestor antes da operação e o ajude a tomar decisões preventivas baseadas em dados ambientais e operacionais.
 
@@ -52,9 +82,9 @@ Uma solução direcionada ao gestor tem **maior alavancagem**: uma única decis�
 
 ## 2. Solução Proposta
 
-### O que é o Sompo RiskRadar?
+### O que é a Sompo RiskRadar?
 
-O **Sompo RiskRadar** é uma plataforma de gestão de risco preditivo para frotas de equipamentos agrícolas, com foco no gestor de operações. A solução integra dados climáticos, ambientais e operacionais para gerar:
+A **Sompo RiskRadar** é uma plataforma de gestão de risco preditivo para frotas de equipamentos agrícolas, com foco no gestor de operações. A solução integra dados climáticos, ambientais e operacionais para gerar:
 
 1. **Alertas antecipados de risco climático** — com base na previsão dos próximos dias, o sistema informa ao gestor quais equipamentos e regiões estão em situação de risco elevado antes que a operação comece.
 
@@ -78,7 +108,7 @@ O **Sompo RiskRadar** é uma plataforma de gestão de risco preditivo para frota
 
 ## 3. Personas e Necessidades
 
-### 👤 Persona 1 — Gestor de Operações (Persona Principal)
+### Persona 1 — Gestor de Operações (Persona Principal)
 
 **Perfil:** Responsável pela gestão de uma frota de 5 a 30 equipamentos agrícolas. Acompanha o trabalho de múltiplos operadores em campo, muitas vezes em diferentes propriedades ou regiões.
 
@@ -92,15 +122,15 @@ O **Sompo RiskRadar** é uma plataforma de gestão de risco preditivo para frota
 **Necessidades na solução:**
 
 - Dashboard centralizado com status de risco de cada equipamento
-- Alertas consolidados por região e janela de tempo (próximas 24h, 48h, 72h)
+- Alertas consolidados por região e janela de tempo (próximas 24h, 48h)
 - Histórico de recomendações cumpridas e descumpridas
 - Relatório de impacto financeiro das ações preventivas
 
-**Como o Sompo RiskRadar ajuda:** O gestor acessa o painel pela manhã, verifica o mapa de risco da semana, recebe alertas automáticos por e-mail/SMS para eventos climáticos significativos e acompanha o histórico de manutenções realizadas.
+**Como a Sompo RiskRadar ajuda:** O gestor acessa o painel pela manhã, verifica o mapa de risco da semana, recebe alertas automáticos por e-mail/SMS para eventos climáticos significativos e acompanha o histórico de manutenções realizadas.
 
 ---
 
-### 👤 Persona 2 — Operador de Campo
+###  Persona 2 — Operador de Campo
 
 **Perfil:** Profissional que opera o equipamento diretamente. Pode ou não ter acesso a smartphone em campo. Recebe instruções do gestor.
 
@@ -120,7 +150,7 @@ O **Sompo RiskRadar** é uma plataforma de gestão de risco preditivo para frota
 
 ---
 
-### 👤 Persona 3 — Analista de Sinistros (Sompo Seguros)
+###  Persona 3 — Analista de Sinistros (Sompo Seguros)
 
 **Perfil:** Profissional da seguradora responsável por avaliar e processar sinistros da carteira agro.
 
@@ -136,7 +166,7 @@ O **Sompo RiskRadar** é uma plataforma de gestão de risco preditivo para frota
 - Relatório de condições ambientais no momento do sinistro
 - Score de risco acumulado do equipamento no período
 
-**Como o Sompo RiskRadar ajuda:** A seguradora acessa (mediante autorização do segurado) um relatório estruturado do histórico de risco e ações do equipamento sinistrado, acelerando a análise e permitindo uma tarifação mais precisa.
+**Como a Sompo RiskRadar ajuda:** A seguradora acessa (mediante autorização do segurado) um relatório estruturado do histórico de risco e ações do equipamento sinistrado, acelerando a análise e permitindo uma tarifação mais precisa.
 
 ---
 
@@ -154,8 +184,8 @@ O **Sompo RiskRadar** é uma plataforma de gestão de risco preditivo para frota
 
 **Critérios de aceite:**
 
-- O sistema consulta previsão climática com antecedência mínima de 48 horas
-- Alertas são classificados em 3 níveis: atenção (amarelo), alerta (laranja) e suspensão recomendada (vermelho)
+- O sistema consulta previsão climática com antecedência mínima de 24 horas
+- Alertas são classificados em níveis de: atenção (amarelo), alerta (laranja) e suspensão recomendada (vermelho)
 - O gestor recebe notificação por e-mail e/ou push notification
 - O alerta indica quais equipamentos e regiões estão afetados
 
@@ -397,17 +427,9 @@ A solução será projetada respeitando os seguintes princípios:
 - [ ] Painel financeiro de economia/risco acumulado (US-03)
 - [ ] Testes com usuários simulados e ajustes de UX
 
-### Divisão de Responsabilidades
 
-| Integrante | Área de Foco                                  |
-| ---------- | --------------------------------------------- |
-| [Nome 1]   | Engenharia de dados — pipeline e dataset      |
-| [Nome 2]   | Ciência de dados — modelo preditivo           |
-| [Nome 3]   | Backend — FastAPI e integrações               |
-| [Nome 4]   | Frontend — dashboard React                    |
-| [Nome 5]   | Documentação, UX e gestão do projeto (Trello) |
 
-<!-- > O Trello do projeto está disponível em: [link do Trello] -->
+<!-- > O Trello do projeto estará disponível futuramente -->
 
 ---
 
