@@ -447,7 +447,7 @@ A solução será projetada respeitando os seguintes princípios:
 
 ## 12. Apresentação em Vídeo
 
-📹 **Link para o vídeo de apresentação:** [inserir link após gravação]
+📹 **Link para o vídeo de apresentação:** [Clique aqui!](https://youtu.be/rFwCZOGLQio)
 
 ---
 
