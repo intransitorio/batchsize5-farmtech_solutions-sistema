@@ -248,9 +248,10 @@ O projeto evidencia a aplicação de soluções tecnológicas para agricultura d
 
 # Repositório GitHub
 
-INSERIR LINK DO GITHUB
+ANO1/FASE3/Cap 1 - Etapas de uma Máquina Agrícola.py
 
----
+---https://github.com/intransitorio/batchsize5-farmtech_solutions-sistema
+
 
 # Vídeo Demonstrativo
 
