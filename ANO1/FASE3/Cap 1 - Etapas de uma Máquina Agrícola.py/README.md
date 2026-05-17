@@ -34,9 +34,6 @@
 
 ---
 
-
----
-
 # Objetivo do Projeto
 
 O projeto FarmTech Solutions tem como objetivo desenvolver um sistema inteligente de monitoramento agrícola utilizando ESP32, sensores simulados no Wokwi e armazenamento de dados em banco Oracle.
@@ -132,7 +129,7 @@ Timestamp,Umid,pH,Defic_N,Defic_P,Defic_K,Bomba
 
 ## Print do CSV
 
-![CSV](print_csv.png)
+![CSV](./assets/print_csv.png)
 
 ---
 
@@ -158,7 +155,7 @@ Estrutura da tabela:
 
 ## Print da Estrutura da Tabela
 
-![Tabela](print_tabela.png)
+![Tabela](./assets/print_tabela.png)
 
 ---
 
@@ -168,7 +165,7 @@ Após a importação do CSV, os dados ficaram disponíveis para consulta no Orac
 
 ## Print dos Dados
 
-![Dados](print_dados.png)
+![Dados](./assets/print_dados.png)
 
 ---
 
@@ -187,7 +184,7 @@ Resultado:
 
 ## Print da Consulta
 
-![Count](print_count.png)
+![Count](./assets/print_count.png)
 
 ---
 
@@ -206,7 +203,7 @@ Resultado:
 
 ## Print da Consulta
 
-![Media](print_media.png)
+![Media](./assets/print_media.png)
 
 ---
 
@@ -226,7 +223,7 @@ Resultado:
 
 ## Print da Consulta
 
-![Deficiencia](print_deficiencia.png)
+![Deficiencia](./assets/print_deficiencia.png)
 
 ---
 
@@ -246,6 +243,44 @@ O projeto evidencia a aplicação de soluções tecnológicas para agricultura d
 
 ---
 
+# Vídeo Demonstrativo
+
+INSERIR LINK DO YOUTUBE NÃO LISTADO
+
+---
+
+# Programa Ir Além - Dashboard em Python
+
+Como atividade opcional do Programa Ir Além, foi desenvolvida uma dashboard em Python para facilitar a visualização dos dados coletados pelos sensores agrícolas.
+
+A dashboard permite acompanhar, de forma gráfica e interativa:
+
+- níveis de umidade do solo;
+- nível de pH;
+- deficiências nutricionais de Fósforo (P) e Potássio (K);
+- status da irrigação e acionamento lógico da bomba;
+- sugestão de irrigação baseada na previsão de chuva.
+
+A visualização foi construída com foco no monitoramento agrícola, permitindo identificar rapidamente situações críticas, como baixa umidade, pH fora da faixa ideal ou presença de deficiência nutricional.
+
+## Funcionalidades da Dashboard
+
+- Exibição dos dados coletados dos sensores em tabela;
+- Indicadores com os valores atuais de umidade, pH e deficiências nutricionais;
+- Gráficos temporais para análise da evolução dos sensores;
+- Monitoramento do status da bomba de irrigação;
+- Campo para indicar previsão de chuva nas próximas horas;
+- Geração de sugestão automática para irrigação ou fertirrigação.
+
+## Exemplo de Uso
+
+Execute o seguinte comando no terminal, dentro da pasta DASHBOARD.PY:
+
+```bash
+streamlit run dashboard.py
+```
+---
+
 # Repositório GitHub
 
 ANO1/FASE3/Cap 1 - Etapas de uma Máquina Agrícola.py
@@ -253,7 +288,5 @@ ANO1/FASE3/Cap 1 - Etapas de uma Máquina Agrícola.py
 ---https://github.com/intransitorio/batchsize5-farmtech_solutions-sistema
 
 
-# Vídeo Demonstrativo
 
-INSERIR LINK DO YOUTUBE NÃO LISTADO
 
