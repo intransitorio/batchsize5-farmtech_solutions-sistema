@@ -243,9 +243,10 @@ O projeto evidencia a aplicação de soluções tecnológicas para agricultura d
 
 ---
 
-# Vídeo Demonstrativo
+# Link para Vídeos
 
-INSERIR LINK DO YOUTUBE NÃO LISTADO
+* **Vídeo de demonstração**: [clique aqui](https://youtu.be/T3LcRTgg2Lk)
+* **Vídeo de Ir Além – Dashboard em Python**: [clique aqui](https://youtu.be/B9NjWEDw0Jc)
 
 ---
 
